@@ -1,0 +1,331 @@
+// RecycleBinMonitor.cs
+using System;
+using System.Configuration;
+using System.Drawing;
+using System.Globalization;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
+using System.Text;
+using System.Windows.Forms;
+
+namespace NanoBin
+{
+    public partial class MainForm : Form
+    {
+
+        [StructLayout(LayoutKind.Sequential, Pack = 8)]
+        public struct SHQUERYRBINFO
+        {
+            public int cbSize;
+            public long i64Size;
+            public long i64NumItems;
+        }
+
+        [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
+        private static extern int SHQueryRecycleBin(string pszRootPath, ref SHQUERYRBINFO pSHQueryRBInfo);
+
+        [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
+        private static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath, RecycleFlags dwFlags);
+
+        [Flags]
+        public enum RecycleFlags : uint
+        {
+            SHERB_NOCONFIRMATION = 0x00000001,
+            SHERB_NOPROGRESSUI = 0x00000002,
+            SHERB_NOSOUND = 0x00000004
+        }
+        public SHQUERYRBINFO info;
+        private Icon iconFull;
+        private Icon iconEmpty;
+        public MainForm()
+        {
+            InitializeComponent();
+
+            iconFull = (Icon)Properties.Resources.tray_full.Clone();   // Clone = независимая копия
+            iconEmpty = (Icon)Properties.Resources.tray_empty.Clone();
+
+            info = new SHQUERYRBINFO();
+
+            timer1.Interval = 1000;
+            timer1.Tick += Timer1_Tick;
+
+            numMaxSizeGb.Minimum = 0.1M;
+            numMaxSizeGb.Maximum = 100;
+            numMaxSizeGb.DecimalPlaces = 1;
+            numMaxSizeGb.Increment = 0.1M;
+            
+            EnsureAppConfigExists();
+            LoadSettingsFromConfig();
+
+            timer1.Start();
+            UpdateStatus();
+        }
+
+        private void LoadSettingsFromConfig()
+        {
+            bool.TryParse(ConfigurationManager.AppSettings["AutoCleanEnabled"], out bool autoClean);
+            double.TryParse(ConfigurationManager.AppSettings["MaxRecycleSizeGb"], out double maxSizeGb);
+            bool.TryParse(ConfigurationManager.AppSettings["NoConfirm"], out bool noConfirm);
+            bool.TryParse(ConfigurationManager.AppSettings["NoProgress"], out bool noProgress);
+            bool.TryParse(ConfigurationManager.AppSettings["NoSound"], out bool noSound);
+            bool.TryParse(ConfigurationManager.AppSettings["HideOnRun"], out bool HideOnRun);
+            bool.TryParse(ConfigurationManager.AppSettings["ShowNotifications"], out bool showNotifications);
+
+            chkAutoClean.Checked = autoClean;
+            if (maxSizeGb > 0) {
+                numMaxSizeGb.Value = ((decimal)maxSizeGb); } else { numMaxSizeGb.Value = 1; }
+
+            chkshowNotifications.Checked = showNotifications;
+            chkNoConfirm.Checked = noConfirm;
+            chkNoProgress.Checked = noProgress;
+            chkNoSound.Checked = noSound;
+            chkHideOnRun.Checked = HideOnRun;
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            var info = GetRecycleBinInfo();
+            lblStatus.Text = $"Файлов: {info.ItemCount}, размер: {info.SizeMB} МБ";
+
+            if (chkAutoClean.Checked)
+            {
+                double maxGb = (double)numMaxSizeGb.Value;
+                if (info.SizeMB / 1024.0 >= maxGb)
+                {
+                    AutoEmptyRecycleBin();
+                    LogAutoClean(info.SizeMB);
+                }
+            }
+            UpdateTrayIcon();
+        }
+
+        private void AutoEmptyRecycleBin()
+        {
+            RecycleFlags flags = GetFlagsFromCheckboxes();
+            SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+            ShowBalloonTip("Корзина очищена автоматически");
+        }
+
+        private RecycleFlags GetFlagsFromCheckboxes()
+        {
+            RecycleFlags flags = 0;
+            if (chkNoConfirm.Checked) flags |= RecycleFlags.SHERB_NOCONFIRMATION;
+            if (chkNoProgress.Checked) flags |= RecycleFlags.SHERB_NOPROGRESSUI;
+            if (chkNoSound.Checked) flags |= RecycleFlags.SHERB_NOSOUND;
+            return flags;
+        }
+
+        private (int ItemCount, double SizeMB) GetRecycleBinInfo()
+        {
+            
+            info.cbSize = Marshal.SizeOf(typeof(SHQUERYRBINFO));
+
+            int hr = SHQueryRecycleBin(null, ref info);
+            if (hr != 0)
+                return (-1, -1);
+
+            return ((int)info.i64NumItems, Math.Round(info.i64Size / 1024.0 / 1024.0, 2));
+            
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("explorer.exe", "shell:RecycleBinFolder");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось открыть корзину: " + ex.Message);
+            }
+        }
+
+        private void btnEmpty_Click(object sender, EventArgs e)
+        {
+                var info = GetRecycleBinInfo();
+           
+                var flags = GetFlagsFromCheckboxes();
+                SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+                UpdateStatus();
+                string time = DateTime.Now.ToString("HH:mm:ss");
+                lstLog.Items.Insert(0, $"{time} — очистка ({info.SizeMB:F2} МБ)");
+                ShowBalloonTip("Корзина очищена вручную");
+
+        }
+
+        private void btnDrives_Click(object sender, EventArgs e)
+        {
+            string[] drives = Environment.GetLogicalDrives();
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var drive in drives)
+            {
+                //SHQUERYRBINFO info = new SHQUERYRBINFO();
+                info.cbSize = Marshal.SizeOf(typeof(SHQUERYRBINFO));
+                int hr = SHQueryRecycleBin(drive, ref info);
+                if (hr == 0 && info.i64NumItems > 0)
+                {
+                    sb.AppendLine($"{drive} — {info.i64NumItems} файлов, {Math.Round(info.i64Size / 1024.0 / 1024.0, 2)} МБ");
+                }
+            }
+
+            MessageBox.Show(sb.Length > 0 ? sb.ToString() : "Корзина на всех дисках пуста.");
+        }
+
+        private void UpdateStatus()
+        {
+            var info = GetRecycleBinInfo();
+            lblStatus.Text = $"Файлов: {info.ItemCount}, размер: {info.SizeMB} МБ";
+        }
+
+        private void LogAutoClean(double sizeBefore)
+        {
+            string time = DateTime.Now.ToString("HH:mm:ss");
+            lstLog.Items.Insert(0, $"{time} — автоочистка ({sizeBefore:F2} МБ)");
+        }
+        private void SaveSettingsToConfig()
+        {
+            EnsureAppConfigExists();
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings["HideOnRun"].Value = chkHideOnRun.Checked.ToString().ToLower();
+            config.AppSettings.Settings["AutoCleanEnabled"].Value = chkAutoClean.Checked.ToString().ToLower();
+            config.AppSettings.Settings["MaxRecycleSizeGb"].Value = numMaxSizeGb.Value.ToString();
+            config.AppSettings.Settings["NoConfirm"].Value = chkNoConfirm.Checked.ToString().ToLower();
+            config.AppSettings.Settings["NoProgress"].Value = chkNoProgress.Checked.ToString().ToLower();
+            config.AppSettings.Settings["NoSound"].Value = chkNoSound.Checked.ToString().ToLower();
+            config.AppSettings.Settings["showNotifications"].Value=chkshowNotifications.Checked.ToString().ToLower();
+           
+            
+
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SaveSettingsToConfig();
+           
+        }
+
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+            this.BringToFront();
+            notifyIcon.Visible = false;
+        }
+
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+ 
+            
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.Hide();
+                notifyIcon.Visible = true;
+                UpdateTrayIcon(); // выбираем иконку в зависимости от содержимого корзины
+            }
+        
+        }
+        private void UpdateTrayIcon()
+        {
+            var info = GetRecycleBinInfo();
+            
+            notifyIcon.Text = $"Файлов: {info.ItemCount}\nРазмер: {info.SizeMB:F1} МБ";
+
+
+            try
+            {
+                notifyIcon.Icon = info.ItemCount == 0 ? iconEmpty : iconFull;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error setting icon!");
+                // лог/игнор
+            }
+        }
+
+        private void notifyIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left) {
+                this.Show();
+                this.WindowState = FormWindowState.Normal;
+                this.BringToFront();
+                notifyIcon.Visible = false;
+            }
+        }
+
+        private void menuEmptyRecycleBin_Click(object sender, EventArgs e)
+        {
+            var info = GetRecycleBinInfo();
+
+            var flags = GetFlagsFromCheckboxes();
+            SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+            string time = DateTime.Now.ToString("HH:mm:ss");
+            lstLog.Items.Insert(0, $"{time} — очистка ({info.SizeMB:F2} МБ)");
+            UpdateStatus();
+            UpdateTrayIcon();
+            ShowBalloonTip("Корзина очищена вручную");
+        }
+
+        private void menuExit_Click(object sender, EventArgs e)
+        {
+            notifyIcon.Visible = false;
+            Application.Exit();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            this.WindowState = chkHideOnRun.Checked == true ? FormWindowState.Minimized : FormWindowState.Normal;
+
+        }
+        private void ShowBalloonTip(string message)
+        {
+            if (!chkshowNotifications.Checked) return;
+            notifyIcon.BalloonTipTitle = "NanoBin";
+            notifyIcon.BalloonTipText = message;
+            notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+            notifyIcon.ShowBalloonTip(3000); // показывать 3 секунды
+        }
+        private void EnsureAppConfigExists()
+        {
+            string configPath = AppDomain.CurrentDomain.SetupInformation.ConfigurationFile;
+            if (!File.Exists(configPath))
+            {
+                var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+                var settings = config.AppSettings.Settings;
+
+                if (settings["HideOnRun"] == null)
+                    settings.Add("HideOnRun", "false");
+                
+                if (settings["AutoCleanEnabled"] == null)
+                    settings.Add("AutoCleanEnabled", "true");
+
+                if (settings["MaxRecycleSizeGb"] == null)
+                    settings.Add("MaxRecycleSizeGb", "1.0");
+
+                if (settings["NoConfirm"] == null)
+                    settings.Add("NoConfirm", "true");
+
+                if (settings["NoProgress"] == null)
+                    settings.Add("NoProgress", "true");
+
+                if (settings["NoSound"] == null)
+                    settings.Add("NoSound", "true");
+
+                if (settings["ShowNotifications"] == null)
+                    settings.Add("ShowNotifications", "true");
+
+                config.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection("appSettings");
+            }
+        }
+    }
+}
