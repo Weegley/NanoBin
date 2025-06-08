@@ -40,65 +40,51 @@ namespace NanoBin
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.trayMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuEmptyRecycleBin = new System.Windows.Forms.ToolStripMenuItem();
+            this.opneRecycleBinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.chkHideOnRun = new System.Windows.Forms.CheckBox();
             this.chkshowNotifications = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSizeGb)).BeginInit();
             this.trayMenu.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblStatus
             // 
-            this.lblStatus.Location = new System.Drawing.Point(20, 20);
+            resources.ApplyResources(this.lblStatus, "lblStatus");
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(350, 23);
-            this.lblStatus.TabIndex = 0;
-            this.lblStatus.Text = "Файлов: 0, размер: 0 МБ";
             // 
             // chkAutoClean
             // 
-            this.chkAutoClean.Location = new System.Drawing.Point(20, 50);
+            resources.ApplyResources(this.chkAutoClean, "chkAutoClean");
             this.chkAutoClean.Name = "chkAutoClean";
-            this.chkAutoClean.Size = new System.Drawing.Size(143, 23);
-            this.chkAutoClean.TabIndex = 1;
-            this.chkAutoClean.Text = "Автоочистка:";
             // 
             // chkNoConfirm
             // 
-            this.chkNoConfirm.Location = new System.Drawing.Point(20, 79);
+            resources.ApplyResources(this.chkNoConfirm, "chkNoConfirm");
             this.chkNoConfirm.Name = "chkNoConfirm";
-            this.chkNoConfirm.Size = new System.Drawing.Size(200, 20);
-            this.chkNoConfirm.TabIndex = 2;
-            this.chkNoConfirm.Text = "Без подтверждения";
             // 
             // chkNoProgress
             // 
-            this.chkNoProgress.Location = new System.Drawing.Point(20, 105);
+            resources.ApplyResources(this.chkNoProgress, "chkNoProgress");
             this.chkNoProgress.Name = "chkNoProgress";
-            this.chkNoProgress.Size = new System.Drawing.Size(200, 20);
-            this.chkNoProgress.TabIndex = 3;
-            this.chkNoProgress.Text = "Без окна прогресса";
             // 
             // chkNoSound
             // 
-            this.chkNoSound.Location = new System.Drawing.Point(20, 131);
+            resources.ApplyResources(this.chkNoSound, "chkNoSound");
             this.chkNoSound.Name = "chkNoSound";
-            this.chkNoSound.Size = new System.Drawing.Size(200, 20);
-            this.chkNoSound.TabIndex = 4;
-            this.chkNoSound.Text = "Без звука";
             // 
             // numMaxSizeGb
             // 
             this.numMaxSizeGb.DecimalPlaces = 1;
-            this.numMaxSizeGb.Location = new System.Drawing.Point(169, 52);
+            resources.ApplyResources(this.numMaxSizeGb, "numMaxSizeGb");
             this.numMaxSizeGb.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             65536});
             this.numMaxSizeGb.Name = "numMaxSizeGb";
-            this.numMaxSizeGb.Size = new System.Drawing.Size(71, 20);
-            this.numMaxSizeGb.TabIndex = 5;
             this.numMaxSizeGb.Value = new decimal(new int[] {
             10,
             0,
@@ -107,52 +93,36 @@ namespace NanoBin
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(20, 198);
+            resources.ApplyResources(this.btnOpen, "btnOpen");
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(100, 30);
-            this.btnOpen.TabIndex = 6;
-            this.btnOpen.Text = "Открыть";
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnEmpty
             // 
-            this.btnEmpty.Location = new System.Drawing.Point(130, 198);
+            resources.ApplyResources(this.btnEmpty, "btnEmpty");
             this.btnEmpty.Name = "btnEmpty";
-            this.btnEmpty.Size = new System.Drawing.Size(100, 30);
-            this.btnEmpty.TabIndex = 7;
-            this.btnEmpty.Text = "Очистить";
             this.btnEmpty.Click += new System.EventHandler(this.btnEmpty_Click);
             // 
             // btnDrives
             // 
-            this.btnDrives.Location = new System.Drawing.Point(240, 198);
+            resources.ApplyResources(this.btnDrives, "btnDrives");
             this.btnDrives.Name = "btnDrives";
-            this.btnDrives.Size = new System.Drawing.Size(120, 30);
-            this.btnDrives.TabIndex = 8;
-            this.btnDrives.Text = "По дискам";
             this.btnDrives.Click += new System.EventHandler(this.btnDrives_Click);
             // 
             // lstLog
             // 
-            this.lstLog.Location = new System.Drawing.Point(20, 238);
+            resources.ApplyResources(this.lstLog, "lstLog");
             this.lstLog.Name = "lstLog";
-            this.lstLog.Size = new System.Drawing.Size(340, 82);
-            this.lstLog.TabIndex = 9;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(246, 54);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "ГБ";
             // 
             // notifyIcon
             // 
             this.notifyIcon.ContextMenuStrip = this.trayMenu;
-            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-            this.notifyIcon.Text = "NanoBin — монитор корзины";
+            resources.ApplyResources(this.notifyIcon, "notifyIcon");
             this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseClick);
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
             // 
@@ -161,47 +131,54 @@ namespace NanoBin
             this.trayMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.trayMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuEmptyRecycleBin,
+            this.opneRecycleBinToolStripMenuItem,
             this.menuExit});
             this.trayMenu.Name = "contextMenuStrip";
-            this.trayMenu.Size = new System.Drawing.Size(175, 48);
+            resources.ApplyResources(this.trayMenu, "trayMenu");
             // 
             // menuEmptyRecycleBin
             // 
             this.menuEmptyRecycleBin.Name = "menuEmptyRecycleBin";
-            this.menuEmptyRecycleBin.Size = new System.Drawing.Size(174, 22);
-            this.menuEmptyRecycleBin.Text = "Очистить корзину";
+            resources.ApplyResources(this.menuEmptyRecycleBin, "menuEmptyRecycleBin");
             this.menuEmptyRecycleBin.Click += new System.EventHandler(this.menuEmptyRecycleBin_Click);
+            // 
+            // opneRecycleBinToolStripMenuItem
+            // 
+            this.opneRecycleBinToolStripMenuItem.Name = "opneRecycleBinToolStripMenuItem";
+            resources.ApplyResources(this.opneRecycleBinToolStripMenuItem, "opneRecycleBinToolStripMenuItem");
+            this.opneRecycleBinToolStripMenuItem.Click += new System.EventHandler(this.opneRecycleBinToolStripMenuItem_Click);
             // 
             // menuExit
             // 
             this.menuExit.Name = "menuExit";
-            this.menuExit.Size = new System.Drawing.Size(174, 22);
-            this.menuExit.Text = "Выход";
+            resources.ApplyResources(this.menuExit, "menuExit");
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
             // chkHideOnRun
             // 
-            this.chkHideOnRun.AutoSize = true;
-            this.chkHideOnRun.Location = new System.Drawing.Point(20, 157);
+            resources.ApplyResources(this.chkHideOnRun, "chkHideOnRun");
             this.chkHideOnRun.Name = "chkHideOnRun";
-            this.chkHideOnRun.Size = new System.Drawing.Size(138, 17);
-            this.chkHideOnRun.TabIndex = 11;
-            this.chkHideOnRun.Text = "Запускать свёрнутым";
             this.chkHideOnRun.UseVisualStyleBackColor = true;
             // 
             // chkshowNotifications
             // 
-            this.chkshowNotifications.AutoSize = true;
-            this.chkshowNotifications.Location = new System.Drawing.Point(20, 180);
+            resources.ApplyResources(this.chkshowNotifications, "chkshowNotifications");
             this.chkshowNotifications.Name = "chkshowNotifications";
-            this.chkshowNotifications.Size = new System.Drawing.Size(159, 17);
-            this.chkshowNotifications.TabIndex = 12;
-            this.chkshowNotifications.Text = "Показывать уведомления";
             this.chkshowNotifications.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnOpen);
+            this.groupBox1.Controls.Add(this.btnEmpty);
+            this.groupBox1.Controls.Add(this.btnDrives);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
             // 
             // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(374, 337);
+            resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chkshowNotifications);
             this.Controls.Add(this.chkHideOnRun);
             this.Controls.Add(this.label1);
@@ -211,26 +188,24 @@ namespace NanoBin
             this.Controls.Add(this.chkNoProgress);
             this.Controls.Add(this.chkNoSound);
             this.Controls.Add(this.numMaxSizeGb);
-            this.Controls.Add(this.btnOpen);
-            this.Controls.Add(this.btnEmpty);
-            this.Controls.Add(this.btnDrives);
             this.Controls.Add(this.lstLog);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "NanoBin — монитор корзины";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSizeGb)).EndInit();
             this.trayMenu.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         private System.Windows.Forms.CheckBox chkshowNotifications;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ToolStripMenuItem opneRecycleBinToolStripMenuItem;
     }
 }

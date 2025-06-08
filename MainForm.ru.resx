@@ -117,307 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 20</value>
-  </data>
-  <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 23</value>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>Файлов: 0, размер: 0 МБ</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblStatus.Text" xml:space="preserve">
-    <value>Files: 0, Size: 0 MB</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
-    <value>lblStatus</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="chkAutoClean.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 50</value>
-  </data>
-  <data name="chkAutoClean.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 23</value>
-  </data>
-  <data name="chkAutoClean.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chkAutoClean.Text" xml:space="preserve">
-    <value>Auto Clean:</value>
-  </data>
-  <data name="&gt;&gt;chkAutoClean.Name" xml:space="preserve">
-    <value>chkAutoClean</value>
-  </data>
-  <data name="&gt;&gt;chkAutoClean.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkAutoClean.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkAutoClean.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="chkNoConfirm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 79</value>
-  </data>
-  <data name="chkNoConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="chkNoConfirm.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chkNoConfirm.Text" xml:space="preserve">
-    <value>No confirmation</value>
-  </data>
-  <data name="&gt;&gt;chkNoConfirm.Name" xml:space="preserve">
-    <value>chkNoConfirm</value>
-  </data>
-  <data name="&gt;&gt;chkNoConfirm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkNoConfirm.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkNoConfirm.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chkNoProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 105</value>
-  </data>
-  <data name="chkNoProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="chkNoProgress.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="chkNoProgress.Text" xml:space="preserve">
-    <value>No Progress</value>
-  </data>
-  <data name="&gt;&gt;chkNoProgress.Name" xml:space="preserve">
-    <value>chkNoProgress</value>
-  </data>
-  <data name="&gt;&gt;chkNoProgress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkNoProgress.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkNoProgress.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="chkNoSound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 131</value>
-  </data>
-  <data name="chkNoSound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="chkNoSound.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chkNoSound.Text" xml:space="preserve">
-    <value>No Sound</value>
-  </data>
-  <data name="&gt;&gt;chkNoSound.Name" xml:space="preserve">
-    <value>chkNoSound</value>
-  </data>
-  <data name="&gt;&gt;chkNoSound.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkNoSound.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkNoSound.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="numMaxSizeGb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 52</value>
-  </data>
-  <data name="numMaxSizeGb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 26</value>
-  </data>
-  <data name="numMaxSizeGb.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;numMaxSizeGb.Name" xml:space="preserve">
-    <value>numMaxSizeGb</value>
-  </data>
-  <data name="&gt;&gt;numMaxSizeGb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxSizeGb.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numMaxSizeGb.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="btnOpen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 25</value>
-  </data>
-  <data name="btnOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 30</value>
-  </data>
-  <data name="btnOpen.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="btnOpen.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="&gt;&gt;btnOpen.Name" xml:space="preserve">
-    <value>btnOpen</value>
-  </data>
-  <data name="&gt;&gt;btnOpen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnOpen.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnOpen.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnEmpty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 25</value>
-  </data>
-  <data name="btnEmpty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 30</value>
-  </data>
-  <data name="btnEmpty.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnEmpty.Text" xml:space="preserve">
-    <value>Clean</value>
-  </data>
-  <data name="&gt;&gt;btnEmpty.Name" xml:space="preserve">
-    <value>btnEmpty</value>
-  </data>
-  <data name="&gt;&gt;btnEmpty.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnEmpty.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnEmpty.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnDrives.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 25</value>
-  </data>
-  <data name="btnDrives.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 30</value>
-  </data>
-  <data name="btnDrives.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnDrives.Text" xml:space="preserve">
-    <value>By Disks</value>
-  </data>
-  <data name="&gt;&gt;btnDrives.Name" xml:space="preserve">
-    <value>btnDrives</value>
-  </data>
-  <data name="&gt;&gt;btnDrives.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDrives.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnDrives.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="lstLog.ItemHeight" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="lstLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 280</value>
-  </data>
-  <data name="lstLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 104</value>
-  </data>
-  <data name="lstLog.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;lstLog.Name" xml:space="preserve">
-    <value>lstLog</value>
-  </data>
-  <data name="&gt;&gt;lstLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lstLog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lstLog.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="chkAutoClean.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkAutoClean.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 24</value>
+  </data>
+  <data name="chkAutoClean.Text" xml:space="preserve">
+    <value>Авто Очистка:</value>
+  </data>
+  <data name="chkNoConfirm.Text" xml:space="preserve">
+    <value>Без Подтверждения</value>
+  </data>
+  <data name="chkNoProgress.Text" xml:space="preserve">
+    <value>Скрывать прогресс</value>
+  </data>
+  <data name="chkNoSound.Text" xml:space="preserve">
+    <value>Без звука</value>
+  </data>
+  <data name="numMaxSizeGb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 51</value>
+  </data>
+  <data name="btnOpen.Text" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="btnEmpty.Text" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="btnDrives.Text" xml:space="preserve">
+    <value>По дискам</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 54</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>GB</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>130, 17</value>
-  </metadata>
-  <metadata name="trayMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>275, 17</value>
-  </metadata>
-  <data name="menuEmptyRecycleBin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 30</value>
+    <value>311, 53</value>
   </data>
   <data name="menuEmptyRecycleBin.Text" xml:space="preserve">
-    <value>Clear Recycle Bin</value>
-  </data>
-  <data name="opneRecycleBinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 30</value>
+    <value>Очистить Корзину</value>
   </data>
   <data name="opneRecycleBinToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open Recycle Bin</value>
-  </data>
-  <data name="menuExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 30</value>
+    <value>Открыть Корзину</value>
   </data>
   <data name="menuExit.Text" xml:space="preserve">
-    <value>Exit</value>
+    <value>Выход</value>
   </data>
   <data name="trayMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 94</value>
-  </data>
-  <data name="&gt;&gt;trayMenu.Name" xml:space="preserve">
-    <value>trayMenu</value>
-  </data>
-  <data name="&gt;&gt;trayMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>230, 94</value>
   </data>
   <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -910,91 +658,22 @@
 </value>
   </data>
   <data name="notifyIcon.Text" xml:space="preserve">
-    <value>NanoBin — Recycle Bin Monitor</value>
-  </data>
-  <data name="chkHideOnRun.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkHideOnRun.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 157</value>
+    <value>NanoBin — монитор корзины</value>
   </data>
   <data name="chkHideOnRun.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 24</value>
-  </data>
-  <data name="chkHideOnRun.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>200, 24</value>
   </data>
   <data name="chkHideOnRun.Text" xml:space="preserve">
-    <value>Run Minimized</value>
-  </data>
-  <data name="&gt;&gt;chkHideOnRun.Name" xml:space="preserve">
-    <value>chkHideOnRun</value>
-  </data>
-  <data name="&gt;&gt;chkHideOnRun.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkHideOnRun.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkHideOnRun.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chkshowNotifications.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkshowNotifications.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 187</value>
+    <value>Запускать свёрнутым</value>
   </data>
   <data name="chkshowNotifications.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 24</value>
-  </data>
-  <data name="chkshowNotifications.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>234, 24</value>
   </data>
   <data name="chkshowNotifications.Text" xml:space="preserve">
-    <value>Show Notifications</value>
-  </data>
-  <data name="&gt;&gt;chkshowNotifications.Name" xml:space="preserve">
-    <value>chkshowNotifications</value>
-  </data>
-  <data name="&gt;&gt;chkshowNotifications.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkshowNotifications.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkshowNotifications.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 210</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 64</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>Показывать уведомления</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Recycle Bin</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>374, 404</value>
+    <value>Корзина</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1487,42 +1166,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>NanoBin — Recycle Bin Monitor</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon.Name" xml:space="preserve">
-    <value>notifyIcon</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuEmptyRecycleBin.Name" xml:space="preserve">
-    <value>menuEmptyRecycleBin</value>
-  </data>
-  <data name="&gt;&gt;menuEmptyRecycleBin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;opneRecycleBinToolStripMenuItem.Name" xml:space="preserve">
-    <value>opneRecycleBinToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;opneRecycleBinToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuExit.Name" xml:space="preserve">
-    <value>menuExit</value>
-  </data>
-  <data name="&gt;&gt;menuExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>NanoBin — монитор корзины</value>
   </data>
 </root>

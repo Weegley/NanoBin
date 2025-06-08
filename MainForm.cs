@@ -1,4 +1,5 @@
 // RecycleBinMonitor.cs
+using NanoBin.Properties;
 using System;
 using System.Configuration;
 using System.Drawing;
@@ -8,11 +9,14 @@ using System.Runtime.InteropServices;
 using System.Security.Principal;
 using System.Text;
 using System.Windows.Forms;
+using NanoBin.Properties;
+using System.Resources;
 
 namespace NanoBin
 {
     public partial class MainForm : Form
     {
+        private ResourceManager resMan;
 
         [StructLayout(LayoutKind.Sequential, Pack = 8)]
         public struct SHQUERYRBINFO
@@ -40,6 +44,7 @@ namespace NanoBin
         private Icon iconEmpty;
         public MainForm()
         {
+            resMan = new ResourceManager("NanoBin.Strings", typeof(MainForm).Assembly);
             InitializeComponent();
 
             iconFull = (Icon)Properties.Resources.tray_full.Clone();   // Clone = независимая копия
@@ -86,7 +91,10 @@ namespace NanoBin
         private void Timer1_Tick(object sender, EventArgs e)
         {
             var info = GetRecycleBinInfo();
-            lblStatus.Text = $"Файлов: {info.ItemCount}, размер: {info.SizeMB} МБ";
+            //lblStatus.Text = $"Файлов: {info.ItemCount}, размер: {info.SizeMB} МБ";
+            
+            lblStatus.Text = string.Format(resMan.GetString("StatusLabel"), info.ItemCount, info.SizeMB);
+
 
             if (chkAutoClean.Checked)
             {
@@ -104,7 +112,7 @@ namespace NanoBin
         {
             RecycleFlags flags = GetFlagsFromCheckboxes();
             SHEmptyRecycleBin(IntPtr.Zero, null, flags);
-            ShowBalloonTip("Корзина очищена автоматически");
+            ShowBalloonTip(resMan.GetString("msgBinAutoCleaned"));
         }
 
         private RecycleFlags GetFlagsFromCheckboxes()
@@ -137,7 +145,7 @@ namespace NanoBin
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не удалось открыть корзину: " + ex.Message);
+                MessageBox.Show(resMan.GetString("msgCouldNotOpenBin") +" "+ ex.Message);
             }
         }
 
@@ -149,8 +157,9 @@ namespace NanoBin
                 SHEmptyRecycleBin(IntPtr.Zero, null, flags);
                 UpdateStatus();
                 string time = DateTime.Now.ToString("HH:mm:ss");
-                lstLog.Items.Insert(0, $"{time} — очистка ({info.SizeMB:F2} МБ)");
-                ShowBalloonTip("Корзина очищена вручную");
+                //lstLog.Items.Insert(0, $"{time} — очистка ({info.SizeMB:F2} МБ)");
+                lstLog.Items.Insert(0, string.Format(resMan.GetString("msgCleaning"),time, $"{info.SizeMB:F2}"));
+                ShowBalloonTip(resMan.GetString("msgBinManuallyCleaned"));
 
         }
 
@@ -166,17 +175,19 @@ namespace NanoBin
                 int hr = SHQueryRecycleBin(drive, ref info);
                 if (hr == 0 && info.i64NumItems > 0)
                 {
-                    sb.AppendLine($"{drive} — {info.i64NumItems} файлов, {Math.Round(info.i64Size / 1024.0 / 1024.0, 2)} МБ");
+                    //sb.AppendLine($"{drive} — {info.i64NumItems} файлов, {Math.Round(info.i64Size / 1024.0 / 1024.0, 2)} МБ");
+                    sb.AppendLine(string.Format(resMan.GetString("byDriveString"), drive, info.i64NumItems, Math.Round(info.i64Size / 1024.0 / 1024.0, 2)));
                 }
             }
 
-            MessageBox.Show(sb.Length > 0 ? sb.ToString() : "Корзина на всех дисках пуста.");
+            MessageBox.Show(sb.Length > 0 ? sb.ToString() : resMan.GetString("strAllbinsAreEmpty"));
         }
 
         private void UpdateStatus()
         {
             var info = GetRecycleBinInfo();
-            lblStatus.Text = $"Файлов: {info.ItemCount}, размер: {info.SizeMB} МБ";
+            //lblStatus.Text = $"Файлов: {info.ItemCount}, размер: {info.SizeMB} МБ";
+            lblStatus.Text = string.Format(resMan.GetString("StatusLabel"), info.ItemCount, info.SizeMB);
         }
 
         private void LogAutoClean(double sizeBefore)
@@ -263,10 +274,10 @@ namespace NanoBin
             var flags = GetFlagsFromCheckboxes();
             SHEmptyRecycleBin(IntPtr.Zero, null, flags);
             string time = DateTime.Now.ToString("HH:mm:ss");
-            lstLog.Items.Insert(0, $"{time} — очистка ({info.SizeMB:F2} МБ)");
+            lstLog.Items.Insert(0, string.Format(resMan.GetString("msgCleaning"), time, $"{info.SizeMB:F2}"));
             UpdateStatus();
             UpdateTrayIcon();
-            ShowBalloonTip("Корзина очищена вручную");
+            ShowBalloonTip(resMan.GetString("msgBinManuallyCleaned"));
         }
 
         private void menuExit_Click(object sender, EventArgs e)
@@ -325,6 +336,18 @@ namespace NanoBin
 
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
+            }
+        }
+
+        private void opneRecycleBinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("explorer.exe", "shell:RecycleBinFolder");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(resMan.GetString("msgCouldNotOpenBin") + " " + ex.Message);
             }
         }
     }
