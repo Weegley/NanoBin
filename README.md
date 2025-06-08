@@ -2,7 +2,7 @@
 
 **NanoBin** is a lightweight WinForms application that monitors the Windows Recycle Bin in real-time and automatically empties it when the total size exceeds a specified threshold. Runs in the system tray, supports localization, and offers flexible settings.
 
-![изображение](https://github.com/user-attachments/assets/23a361a1-0dc1-40c2-a5ef-903cf31a936f)
+![изображение](https://github.com/user-attachments/assets/b3f4213b-e82b-4dbe-8398-00c83398eb37)
 ---
 
 ## 🚀 Features
