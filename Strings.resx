@@ -138,4 +138,7 @@
   <data name="strAllbinsAreEmpty" xml:space="preserve">
     <value>Recycle bin is empty on all drives</value>
   </data>
+  <data name="strNotifyIconText" xml:space="preserve">
+    <value>Files: {0}{1}Size: {2} MB</value>
+  </data>
 </root>

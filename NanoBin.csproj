@@ -1,11 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
+<Deterministic>false</Deterministic>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net47</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>NanoBin</RootNamespace>
     <ApplicationIcon>Program.ico</ApplicationIcon>
     <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Resources\**" />
@@ -34,6 +41,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

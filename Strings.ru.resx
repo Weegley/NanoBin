@@ -138,4 +138,7 @@
   <data name="strAllbinsAreEmpty" xml:space="preserve">
     <value>Корзина на всех дисках пуста</value>
   </data>
+  <data name="strNotifyIconText" xml:space="preserve">
+    <value>Файлов: {0}{1}Объём: {2} Мб</value>
+  </data>
 </root>

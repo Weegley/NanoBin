@@ -91,7 +91,6 @@ namespace NanoBin
         private void Timer1_Tick(object sender, EventArgs e)
         {
             var info = GetRecycleBinInfo();
-            //lblStatus.Text = $"Файлов: {info.ItemCount}, размер: {info.SizeMB} МБ";
             
             lblStatus.Text = string.Format(resMan.GetString("StatusLabel"), info.ItemCount, info.SizeMB);
 
@@ -242,9 +241,9 @@ namespace NanoBin
         private void UpdateTrayIcon()
         {
             var info = GetRecycleBinInfo();
-            
-            notifyIcon.Text = $"Файлов: {info.ItemCount}\nРазмер: {info.SizeMB:F1} МБ";
 
+            //notifyIcon.Text = $"Файлов: {info.ItemCount}\nРазмер: {info.SizeMB:F1} МБ";
+            notifyIcon.Text = string.Format(resMan.GetString("strNotifyIconText"), info.ItemCount, Environment.NewLine, info.SizeMB);
 
             try
             {

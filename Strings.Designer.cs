@@ -122,5 +122,14 @@ namespace NanoBin {
                 return ResourceManager.GetString("strAllbinsAreEmpty", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Files: {0}{1}Size: {2} MB.
+        /// </summary>
+        internal static string strNotifyIconText {
+            get {
+                return ResourceManager.GetString("strNotifyIconText", resourceCulture);
+            }
+        }
     }
 }
