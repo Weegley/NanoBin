@@ -1,3 +1,5 @@
+![workflow](https://github.com/Weegley/NanoBin/actions/workflows/main.yml/badge.svg)
+
 # 🗑️ NanoBin — Recycle Bin Monitor for Windows
 
 **NanoBin** is a lightweight WinForms application that monitors the Windows Recycle Bin in real-time and automatically empties it when the total size exceeds a specified threshold. Runs in the system tray, supports localization, and offers flexible settings.
