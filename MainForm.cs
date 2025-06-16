@@ -153,7 +153,19 @@ namespace NanoBin
                 var info = GetRecycleBinInfo();
            
                 var flags = GetFlagsFromCheckboxes();
-                SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+
+            try
+            {
+                uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+                if (result == 0) { return; }
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+
+
+                
                 UpdateStatus();
                 string time = DateTime.Now.ToString("HH:mm:ss");
                 //lstLog.Items.Insert(0, $"{time} — очистка ({info.SizeMB:F2} МБ)");
@@ -271,7 +283,17 @@ namespace NanoBin
             var info = GetRecycleBinInfo();
 
             var flags = GetFlagsFromCheckboxes();
-            SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+
+            try
+            {
+                uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+                if (result == 0) { return; }
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+
             string time = DateTime.Now.ToString("HH:mm:ss");
             lstLog.Items.Insert(0, string.Format(resMan.GetString("msgCleaning"), time, $"{info.SizeMB:F2}"));
             UpdateStatus();
