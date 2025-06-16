@@ -1,4 +1,4 @@
-name: Build and Release NanoBin
+name: Build NanoBin
 
 on:
   push:
