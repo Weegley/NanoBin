@@ -1,0 +1,36 @@
+name: Build NanoBin
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: 🧾 Checkout repository
+      uses: actions/checkout@v4
+
+    - name: 🛠 Set up MSBuild
+      uses: microsoft/setup-msbuild@v1.3.1
+
+    - name: 📦 Restore NuGet packages
+      run: nuget restore NanoBin.sln
+
+    - name: ⚙️ Build solution
+      run: msbuild NanoBin.sln /p:Configuration=Release
+
+    - name: 🧳 Archive build output
+      run: |
+        mkdir output
+        copy /Y .\bin\Release\* output\
+        powershell Compress-Archive -Path output\* -DestinationPath NanoBin.zip
+
+    - name: ⬆️ Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: NanoBin-Windows
+        path: NanoBin.zip
