@@ -26,7 +26,7 @@ jobs:
     - name: 🧳 Archive build output
       run: |
         mkdir output
-        Copy-Item -Path .\bin\Release\* -Destination output\ -Force
+        Copy-Item -Path .\bin\Release\* -Destination output\ -Force -Recurse
         Compress-Archive -Path output\* -DestinationPath NanoBin.zip
 
     - name: ⬆️ Upload artifact
