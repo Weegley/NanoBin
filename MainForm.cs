@@ -349,5 +349,16 @@ namespace NanoBin
                 MessageBox.Show(resMan.GetString("msgCouldNotOpenBin") + " " + ex.Message);
             }
         }
+
+        private void chkAutoClean_ClientSizeChanged(object sender, EventArgs e)
+        {
+            numMaxSizeGb.Left = chkAutoClean.Left + chkAutoClean.Width + 6;
+            label1.Left = numMaxSizeGb.Left + numMaxSizeGb.Width + 6;
+        }
+
+        private void chkNoConfirm_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -59,11 +59,13 @@ namespace NanoBin
             // 
             resources.ApplyResources(this.chkAutoClean, "chkAutoClean");
             this.chkAutoClean.Name = "chkAutoClean";
+            this.chkAutoClean.ClientSizeChanged += new System.EventHandler(this.chkAutoClean_ClientSizeChanged);
             // 
             // chkNoConfirm
             // 
             resources.ApplyResources(this.chkNoConfirm, "chkNoConfirm");
             this.chkNoConfirm.Name = "chkNoConfirm";
+            this.chkNoConfirm.CheckedChanged += new System.EventHandler(this.chkNoConfirm_CheckedChanged);
             // 
             // chkNoProgress
             // 
@@ -178,6 +180,8 @@ namespace NanoBin
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.numMaxSizeGb);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chkshowNotifications);
             this.Controls.Add(this.chkHideOnRun);
@@ -187,7 +191,6 @@ namespace NanoBin
             this.Controls.Add(this.chkNoConfirm);
             this.Controls.Add(this.chkNoProgress);
             this.Controls.Add(this.chkNoSound);
-            this.Controls.Add(this.numMaxSizeGb);
             this.Controls.Add(this.lstLog);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
