@@ -19,7 +19,9 @@ jobs:
       version: ${{ steps.get_version.outputs.version }}
 
     steps:
-
+      - name: 🧾 Checkout repository
+        uses: actions/checkout@v4
+        
       - name: 🔍 Extract version from AssemblyInfo.cs
         id: get_version
         shell: pwsh
