@@ -30,6 +30,10 @@ jobs:
             if ($content -match 'AssemblyVersion\("([0-9\.]+)"\)') {
                 Write-Host "Полное совпадение: $($matches[0])"
                 Write-Host "Только версия: $($matches[1])"
+              }
+            if ($content -match 'AssemblyVersion\("([0-9\.]+)"\)') {
+                Write-Host "Полное совпадение: $($matches[0])"
+                Write-Host "Только версия: $($matches[1])"
             $version = $matches[1]
             echo "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
           } else {
