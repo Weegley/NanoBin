@@ -27,6 +27,7 @@ jobs:
         shell: pwsh
         run: |
           $content = Get-Content ./Properties/AssemblyInfo.cs
+          Write-Host $content
           if ($content -match 'AssemblyVersion\("([0-9\.]+)"\)') {
             $version = $matches[1]
             echo "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
