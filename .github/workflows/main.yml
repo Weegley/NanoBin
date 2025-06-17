@@ -1,17 +1,7 @@
-name: Build NanoBin
+name: Build & Release NanoBin
 
 on:
   push:
-    branches: [ main ]
-    paths-ignore:
-      - '**/*.md'
-      - '**/*.txt'
-      - 'LICENSE'
-      - '**/*.ico'
-      - '**/*.png'
-      - '**/*.jpg'
-      - '**/*.svg'
-  pull_request:
     branches: [ main ]
     paths-ignore:
       - '**/*.md'
@@ -25,29 +15,92 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
 
     steps:
-    - name: 🧾 Checkout repository
-      uses: actions/checkout@v4
+      - name: 🧾 Checkout repository
+        uses: actions/checkout@v4
 
-    - name: 🛠 Set up MSBuild
-      uses: microsoft/setup-msbuild@v1.3.1
+      - name: 🔍 Extract version from AssemblyInfo.cs
+        id: get_version
+        shell: pwsh
+        run: |
+          $content = Get-Content ./Properties/AssemblyInfo.cs
+          if ($content -match 'AssemblyVersion\("([0-9\.]+)"\)') {
+            $version = $matches[1]
+            echo "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          } else {
+            Write-Error "AssemblyVersion not found!"
+            exit 1
+          }
 
-    - name: 📦 Restore NuGet packages
-      run: nuget restore NanoBin.sln
+      - name: 🛠 Set up MSBuild
+        uses: microsoft/setup-msbuild@v1.3.1
 
-    - name: ⚙️ Build solution
-      run: msbuild NanoBin.sln /p:Configuration=Release
+      - name: 📦 Restore NuGet packages
+        run: nuget restore NanoBin.sln
 
-    - name: 🧳 Archive build output
-      run: |
-        mkdir output
-        Copy-Item -Path .\bin\Release\* -Destination output\ -Force -Recurse
-        Compress-Archive -Path output\* -DestinationPath NanoBin.zip
+      - name: ⚙️ Build solution
+        run: msbuild NanoBin.sln /p:Configuration=Release
 
-    - name: ⬆️ Upload artifact to Actions
-      if: github.event_name != 'push' || !startsWith(github.ref, 'refs/tags/')
-      uses: actions/upload-artifact@v4
-      with:
-        name: NanoBin-Windows
-        path: NanoBin.zip
+      - name: 🧳 Archive build output
+        run: |
+          mkdir output
+          Copy-Item -Path .\bin\Release\* -Destination output\ -Force -Recurse
+          Compress-Archive -Path output\* -DestinationPath NanoBin.zip
+
+      - name: ⬆️ Upload artifact to Actions
+        uses: actions/upload-artifact@v4
+        with:
+          name: NanoBin-Windows
+          path: NanoBin.zip
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: NanoBin-Windows
+
+      - name: Get version from build job
+        run: echo "Version is ${{ needs.build.outputs.version }}"
+
+      - name: Create tag if not exists
+        id: create_tag
+        run: |
+          TAG="v${{ needs.build.outputs.version }}"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists. Skipping tag creation."
+            exit 0
+          fi
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag "$TAG"
+          git push origin "$TAG"
+
+      - name: Generate changelog (simple)
+        id: changelog
+        run: |
+          PREV_TAG=$(git tag --sort=-v:refname | head -n 2 | tail -n 1)
+          if [ -z "$PREV_TAG" ]; then
+            git log --oneline > CHANGELOG.txt
+          else
+            git log "$PREV_TAG"..HEAD --oneline > CHANGELOG.txt
+          fi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ needs.build.outputs.version }}
+          name: NanoBin v${{ needs.build.outputs.version }}
+          body_path: CHANGELOG.txt
+          files: NanoBin.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
