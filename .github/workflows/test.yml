@@ -1,4 +1,4 @@
-tename: Build & Release NanoBin
+name: test
 
 on:
   push:
