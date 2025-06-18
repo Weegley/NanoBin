@@ -126,6 +126,15 @@
   <data name="byDriveString" xml:space="preserve">
     <value>{0} — {1} Файлов, {2} Мб</value>
   </data>
+  <data name="captionDeleteElements" xml:space="preserve">
+    <value>Удалить Файл(ы)</value>
+  </data>
+  <data name="confirmDeleteElements" xml:space="preserve">
+    <value>Вы действительно хотите безвозвратно удалить {0} элемент(ов)?</value>
+  </data>
+  <data name="logAutoCleanEnabled" xml:space="preserve">
+    <value>Автоочистка не запрашивает подтверждения!</value>
+  </data>
   <data name="logBinAutoCleaned" xml:space="preserve">
     <value>{0}: Автоочистка ({1} MB)</value>
   </data>

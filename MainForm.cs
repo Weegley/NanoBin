@@ -10,6 +10,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Windows.Forms;
 using System.Resources;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace NanoBin
 {
@@ -312,21 +313,25 @@ namespace NanoBin
         private void DoManualClean()
         {
             var info = GetRecycleBinInfo();
+            
             if (info.ItemCount > 0)
             {
-                try
+                if (chkNoConfirm.Checked || ConfirmCleaning(info.ItemCount))
                 {
-                    var flags = GetFlagsFromCheckboxes();
-                    uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
-                    if (result != 0) { return; }
-                    else
+                    try
                     {
-                        LogManualClean(info);
+                        RecycleFlags flags = GetFlagsFromCheckboxes() | RecycleFlags.SHERB_NOCONFIRMATION;
+                        uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+                        if (result != 0) { return; }
+                        else
+                        {
+                            LogManualClean(info);
+                        }
                     }
-                }
-                catch (Exception)
-                {
-                    return;
+                    catch (Exception)
+                    {
+                        return;
+                    }
                 }
             }
         }
@@ -343,23 +348,23 @@ namespace NanoBin
             if (chkAutoClean.Checked)
             {
 
-                (int ItemCount, double SizeMB) info = GetRecycleBinInfo();
+                (_, double SizeMB) = GetRecycleBinInfo();
 
                 double maxGb = (double)numMaxSizeGb.Value;
-                if (info.SizeMB / 1024.0 >= maxGb)
+                if ( SizeMB / 1024.0 >= maxGb)
                 {
-                    try
-                    {
-                        RecycleFlags flags = GetFlagsFromCheckboxes();
-                        uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
-                        if (result != 0) { return; }
-                        else
+                        try
                         {
-                            LogAutoClean(info.SizeMB);
+                            RecycleFlags flags = GetFlagsFromCheckboxes() | RecycleFlags.SHERB_NOCONFIRMATION;
+                        
+                        uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+                            if (result != 0) { return; }
+                            else
+                            {
+                                LogAutoClean(SizeMB);
+                            }
                         }
-                    }
-                    catch(Exception) { return; }
-
+                        catch (Exception) { return; }
                 }
             }
 
@@ -382,6 +387,25 @@ namespace NanoBin
             {
                 MessageBox.Show(resMan.GetString("msgCouldNotOpenBin") + " " + ex.Message);
             }
+        }
+        public bool ConfirmCleaning(double count)
+        {
+
+            DialogResult dialogResult = MessageBox.Show(string.Format(resMan.GetString("confirmDeleteElements"),count), resMan.GetString("captionDeleteElements"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            return dialogResult == DialogResult.Yes;
+        }
+
+        private void chkAutoClean_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAutoClean.Checked == true)
+            {
+                lstLog.Items.Insert(0, resMan.GetString("logAutoCleanEnabled"));
+            }
+            }
+
+        private void clearLogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lstLog.Items.Clear();
         }
     }
 }

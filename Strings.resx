@@ -126,6 +126,15 @@
   <data name="byDriveString" xml:space="preserve">
     <value>{0} — {1} Files, {2} MB</value>
   </data>
+  <data name="captionDeleteElements" xml:space="preserve">
+    <value>Delete File(s)</value>
+  </data>
+  <data name="confirmDeleteElements" xml:space="preserve">
+    <value>Are you sure you want to permanently delete {0} item(s)?</value>
+  </data>
+  <data name="logAutoCleanEnabled" xml:space="preserve">
+    <value>AutoCleaning asks no confirmation!</value>
+  </data>
   <data name="logBinAutoCleaned" xml:space="preserve">
     <value>{0}: Recycle bin Auto Cleaned ({1} MB)</value>
   </data>

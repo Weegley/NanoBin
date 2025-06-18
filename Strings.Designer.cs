@@ -88,6 +88,33 @@ namespace NanoBin {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete File(s).
+        /// </summary>
+        internal static string captionDeleteElements {
+            get {
+                return ResourceManager.GetString("captionDeleteElements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to permanently delete {0} item(s)?.
+        /// </summary>
+        internal static string confirmDeleteElements {
+            get {
+                return ResourceManager.GetString("confirmDeleteElements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AutoCleaning asks no confirmation!.
+        /// </summary>
+        internal static string logAutoCleanEnabled {
+            get {
+                return ResourceManager.GetString("logAutoCleanEnabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0}: Recycle bin Auto Cleaned ({1} MB).
         /// </summary>
         internal static string logBinAutoCleaned {

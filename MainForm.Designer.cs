@@ -12,7 +12,6 @@ namespace NanoBin
         private System.Windows.Forms.Button btnEmpty;
         private System.Windows.Forms.Button btnDrives;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ListBox lstLog;
         private System.ComponentModel.IContainer components;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NotifyIcon notifyIcon;
@@ -35,7 +34,6 @@ namespace NanoBin
             this.btnEmpty = new System.Windows.Forms.Button();
             this.btnDrives = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lstLog = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.trayMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -45,9 +43,13 @@ namespace NanoBin
             this.chkHideOnRun = new System.Windows.Forms.CheckBox();
             this.chkshowNotifications = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lstLog = new System.Windows.Forms.ListBox();
+            this.logContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.clearLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSizeGb)).BeginInit();
             this.trayMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.logContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblStatus
@@ -59,13 +61,13 @@ namespace NanoBin
             // 
             resources.ApplyResources(this.chkAutoClean, "chkAutoClean");
             this.chkAutoClean.Name = "chkAutoClean";
+            this.chkAutoClean.CheckedChanged += new System.EventHandler(this.chkAutoClean_CheckedChanged);
             this.chkAutoClean.ClientSizeChanged += new System.EventHandler(this.ChkAutoClean_ClientSizeChanged);
             // 
             // chkNoConfirm
             // 
             resources.ApplyResources(this.chkNoConfirm, "chkNoConfirm");
             this.chkNoConfirm.Name = "chkNoConfirm";
-            
             // 
             // chkNoProgress
             // 
@@ -79,8 +81,8 @@ namespace NanoBin
             // 
             // numMaxSizeGb
             // 
-            this.numMaxSizeGb.DecimalPlaces = 1;
             resources.ApplyResources(this.numMaxSizeGb, "numMaxSizeGb");
+            this.numMaxSizeGb.DecimalPlaces = 1;
             this.numMaxSizeGb.Minimum = new decimal(new int[] {
             1,
             0,
@@ -111,15 +113,6 @@ namespace NanoBin
             this.btnDrives.Name = "btnDrives";
             this.btnDrives.Click += new System.EventHandler(this.BtnDrives_Click);
             // 
-            // timer1
-            // 
-
-            // 
-            // lstLog
-            // 
-            resources.ApplyResources(this.lstLog, "lstLog");
-            this.lstLog.Name = "lstLog";
-            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
@@ -127,37 +120,37 @@ namespace NanoBin
             // 
             // notifyIcon
             // 
-            this.notifyIcon.ContextMenuStrip = this.trayMenu;
             resources.ApplyResources(this.notifyIcon, "notifyIcon");
+            this.notifyIcon.ContextMenuStrip = this.trayMenu;
             this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon_MouseClick);
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon_MouseDoubleClick);
             // 
             // trayMenu
             // 
+            resources.ApplyResources(this.trayMenu, "trayMenu");
             this.trayMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.trayMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuEmptyRecycleBin,
             this.opneRecycleBinToolStripMenuItem,
             this.menuExit});
             this.trayMenu.Name = "contextMenuStrip";
-            resources.ApplyResources(this.trayMenu, "trayMenu");
             // 
             // menuEmptyRecycleBin
             // 
-            this.menuEmptyRecycleBin.Name = "menuEmptyRecycleBin";
             resources.ApplyResources(this.menuEmptyRecycleBin, "menuEmptyRecycleBin");
+            this.menuEmptyRecycleBin.Name = "menuEmptyRecycleBin";
             this.menuEmptyRecycleBin.Click += new System.EventHandler(this.MenuEmptyRecycleBin_Click);
             // 
             // opneRecycleBinToolStripMenuItem
             // 
-            this.opneRecycleBinToolStripMenuItem.Name = "opneRecycleBinToolStripMenuItem";
             resources.ApplyResources(this.opneRecycleBinToolStripMenuItem, "opneRecycleBinToolStripMenuItem");
+            this.opneRecycleBinToolStripMenuItem.Name = "opneRecycleBinToolStripMenuItem";
             this.opneRecycleBinToolStripMenuItem.Click += new System.EventHandler(this.OpneRecycleBinToolStripMenuItem_Click);
             // 
             // menuExit
             // 
-            this.menuExit.Name = "menuExit";
             resources.ApplyResources(this.menuExit, "menuExit");
+            this.menuExit.Name = "menuExit";
             this.menuExit.Click += new System.EventHandler(this.MenuExit_Click);
             // 
             // chkHideOnRun
@@ -174,17 +167,39 @@ namespace NanoBin
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btnOpen);
             this.groupBox1.Controls.Add(this.btnEmpty);
             this.groupBox1.Controls.Add(this.btnDrives);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // lstLog
+            // 
+            resources.ApplyResources(this.lstLog, "lstLog");
+            this.lstLog.ContextMenuStrip = this.logContextMenu;
+            this.lstLog.FormattingEnabled = true;
+            this.lstLog.Name = "lstLog";
+            // 
+            // logContextMenu
+            // 
+            resources.ApplyResources(this.logContextMenu, "logContextMenu");
+            this.logContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.logContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearLogToolStripMenuItem});
+            this.logContextMenu.Name = "logContextMenu";
+            // 
+            // clearLogToolStripMenuItem
+            // 
+            resources.ApplyResources(this.clearLogToolStripMenuItem, "clearLogToolStripMenuItem");
+            this.clearLogToolStripMenuItem.Name = "clearLogToolStripMenuItem";
+            this.clearLogToolStripMenuItem.Click += new System.EventHandler(this.clearLogToolStripMenuItem_Click);
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.lstLog);
             this.Controls.Add(this.numMaxSizeGb);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chkshowNotifications);
@@ -195,7 +210,6 @@ namespace NanoBin
             this.Controls.Add(this.chkNoConfirm);
             this.Controls.Add(this.chkNoProgress);
             this.Controls.Add(this.chkNoSound);
-            this.Controls.Add(this.lstLog);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "MainForm";
@@ -206,6 +220,7 @@ namespace NanoBin
             ((System.ComponentModel.ISupportInitialize)(this.numMaxSizeGb)).EndInit();
             this.trayMenu.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.logContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +229,8 @@ namespace NanoBin
         private System.Windows.Forms.CheckBox chkshowNotifications;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolStripMenuItem opneRecycleBinToolStripMenuItem;
+        private System.Windows.Forms.ListBox lstLog;
+        private System.Windows.Forms.ContextMenuStrip logContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem clearLogToolStripMenuItem;
     }
 }

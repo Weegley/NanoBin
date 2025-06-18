@@ -117,215 +117,89 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblStatus.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>559, 501</value>
+  </data>
   <data name="lblStatus.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 14</value>
   </data>
+  <data name="&gt;&gt;chkHideOnRun.Name" xml:space="preserve">
+    <value>chkHideOnRun</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 20</value>
-  </data>
-  <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lblStatus.Text" xml:space="preserve">
-    <value>Files: 0, size: 0 МБ</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
-    <value>lblStatus</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="chkAutoClean.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkAutoClean.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 44</value>
-  </data>
-  <data name="chkAutoClean.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkAutoClean.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 24</value>
-  </data>
-  <data name="chkAutoClean.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="chkAutoClean.Text" xml:space="preserve">
-    <value>Auto Clean:</value>
-  </data>
-  <data name="&gt;&gt;chkAutoClean.Name" xml:space="preserve">
-    <value>chkAutoClean</value>
-  </data>
-  <data name="&gt;&gt;chkAutoClean.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkAutoClean.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkAutoClean.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chkNoConfirm.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkNoConfirm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 78</value>
-  </data>
-  <data name="chkNoConfirm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkNoConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 24</value>
-  </data>
-  <data name="chkNoConfirm.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="chkNoConfirm.Text" xml:space="preserve">
-    <value>No Confirmation</value>
-  </data>
-  <data name="&gt;&gt;chkNoConfirm.Name" xml:space="preserve">
-    <value>chkNoConfirm</value>
-  </data>
-  <data name="&gt;&gt;chkNoConfirm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkNoConfirm.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkNoConfirm.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="chkNoProgress.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkNoProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 110</value>
-  </data>
-  <data name="chkNoProgress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkNoProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 24</value>
-  </data>
-  <data name="chkNoProgress.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="chkNoProgress.Text" xml:space="preserve">
-    <value>Hide Progress</value>
-  </data>
-  <data name="&gt;&gt;chkNoProgress.Name" xml:space="preserve">
-    <value>chkNoProgress</value>
-  </data>
-  <data name="&gt;&gt;chkNoProgress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkNoProgress.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkNoProgress.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="chkNoSound.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkNoSound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 142</value>
-  </data>
-  <data name="chkNoSound.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkNoSound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 24</value>
-  </data>
-  <data name="chkNoSound.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="chkNoSound.Text" xml:space="preserve">
-    <value>No Sound</value>
-  </data>
-  <data name="&gt;&gt;chkNoSound.Name" xml:space="preserve">
-    <value>chkNoSound</value>
-  </data>
-  <data name="&gt;&gt;chkNoSound.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkNoSound.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkNoSound.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="numMaxSizeGb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 42</value>
-  </data>
-  <data name="numMaxSizeGb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="numMaxSizeGb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 26</value>
-  </data>
-  <data name="numMaxSizeGb.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;numMaxSizeGb.Name" xml:space="preserve">
     <value>numMaxSizeGb</value>
   </data>
-  <data name="&gt;&gt;numMaxSizeGb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lstLog.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="&gt;&gt;numMaxSizeGb.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;chkNoProgress.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
-  <data name="&gt;&gt;numMaxSizeGb.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="btnDrives.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 45</value>
   </data>
-  <data name="btnOpen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 38</value>
-  </data>
-  <data name="btnOpen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="numMaxSizeGb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="btnOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 45</value>
+  <data name="chkshowNotifications.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="btnOpen.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;lstLog.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="btnOpen.Text" xml:space="preserve">
-    <value>Open</value>
+  <data name="chkAutoClean.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 44</value>
   </data>
-  <data name="&gt;&gt;btnOpen.Name" xml:space="preserve">
-    <value>btnOpen</value>
+  <data name="&gt;&gt;chkAutoClean.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;btnOpen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnOpen.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;lstLog.Name" xml:space="preserve">
+    <value>lstLog</value>
   </data>
   <data name="&gt;&gt;btnOpen.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnEmpty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 38</value>
+  <data name="&gt;&gt;chkNoConfirm.Name" xml:space="preserve">
+    <value>chkNoConfirm</value>
   </data>
-  <data name="btnEmpty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;chkAutoClean.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="clearLogToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 30</value>
+  </data>
+  <data name="&gt;&gt;btnDrives.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkAutoClean.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;numMaxSizeGb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chkAutoClean.Name" xml:space="preserve">
+    <value>chkAutoClean</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
+    <value>lblStatus</value>
+  </data>
+  <data name="btnDrives.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 38</value>
+  </data>
+  <data name="btnOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 45</value>
+  </data>
+  <data name="chkHideOnRun.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>Files: 0, size: 0 МБ</value>
   </data>
   <data name="btnEmpty.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 45</value>
@@ -333,529 +207,218 @@
   <data name="btnEmpty.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnEmpty.Text" xml:space="preserve">
-    <value>Clear</value>
+  <data name="&gt;&gt;menuEmptyRecycleBin.Name" xml:space="preserve">
+    <value>menuEmptyRecycleBin</value>
   </data>
-  <data name="&gt;&gt;btnEmpty.Name" xml:space="preserve">
-    <value>btnEmpty</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="&gt;&gt;btnEmpty.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnOpen.Name" xml:space="preserve">
+    <value>btnOpen</value>
   </data>
-  <data name="&gt;&gt;btnEmpty.Parent" xml:space="preserve">
+  <data name="&gt;&gt;numMaxSizeGb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOpen.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;btnEmpty.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnDrives.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 38</value>
-  </data>
-  <data name="btnDrives.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btnDrives.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 45</value>
-  </data>
-  <data name="btnDrives.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnDrives.Text" xml:space="preserve">
-    <value>By Disks</value>
-  </data>
-  <data name="&gt;&gt;btnDrives.Name" xml:space="preserve">
-    <value>btnDrives</value>
-  </data>
-  <data name="&gt;&gt;btnDrives.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnOpen.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnDrives.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;btnDrives.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="lstLog.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 10pt</value>
-  </data>
-  <data name="lstLog.ItemHeight" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="lstLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 348</value>
-  </data>
-  <data name="lstLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="lstLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 124</value>
-  </data>
-  <data name="lstLog.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;lstLog.Name" xml:space="preserve">
-    <value>lstLog</value>
-  </data>
-  <data name="&gt;&gt;lstLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lstLog.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkNoConfirm.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lstLog.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 50</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Gb</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>130, 17</value>
-  </metadata>
-  <metadata name="trayMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>275, 17</value>
-  </metadata>
   <data name="menuEmptyRecycleBin.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 30</value>
   </data>
-  <data name="menuEmptyRecycleBin.Text" xml:space="preserve">
-    <value>Clear Recycle Bin</value>
+  <data name="&gt;&gt;btnDrives.Name" xml:space="preserve">
+    <value>btnDrives</value>
   </data>
-  <data name="opneRecycleBinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 30</value>
+  <data name="&gt;&gt;chkHideOnRun.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="opneRecycleBinToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open Recycle Bin</value>
+  <data name="&gt;&gt;chkNoSound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="menuExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 30</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="menuExit.Text" xml:space="preserve">
-    <value>Exit</value>
+  <data name="chkNoProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 24</value>
   </data>
-  <data name="trayMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 94</value>
+  <data name="&gt;&gt;lblStatus.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;trayMenu.Name" xml:space="preserve">
-    <value>trayMenu</value>
+  <data name="&gt;&gt;logContextMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
   </data>
   <data name="&gt;&gt;trayMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEIAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
-        /wLi4uIJ6enfGObf2Snp4Ng76uPcSeri2mPo49ln6ePajeji15bn4teW6ePZnevk3cTq5dvK6eTayunj
-        2srp49rK6ePayurj2srp5NrK6uTbyurl3Mrq5Nur5+LXluji15bq49mW6uTbe+ri2GPp5Nph6OTYQ+3k
-        2znp4tQk5ubaFf7a2gf///8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
-        /wHw8OIS7OjaOOrk2mLp4tqR6uTat+rk2tTp5Nrl6uTb8url2/bq5Nv96uTb/evl3P/r5dz/6+Xc/+vm
-        3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vm3P/r5tz/6+Xc/+rl
-        2/7r5dv96+Xc/Ovk2/Tq5dvx6uTa4evl287p49mx6ePZjerk2mLm4dc07+/fEP///wEAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAOLixgnp4Nhd6eTbwurl2+7q5Nv86+Xc/+vl3P/r5dz/6+bc/+vl3P/r5dz/6+Xc/+vl
-        3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl3P/r5tz/6+bc/+vm3f/r5dz/6+bc/+vl
-        3P/r5tz/6+Xc/+vm3P/r5t3/6+Xc/+vm3f/r5tz/6+bc/+vm3f/r5tz/6+bc/+vl3P/q5Nv86uTb6unj
-        2sHo5Npo6enpDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADm39Mp6uTZ2+rl3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl
-        2//r5dz/7Obd/+zm3P/r5t3/6+bd/+vm3P/s5t3/7Obc/+zm3f/r5dz/7Obc/+vm3f/r5t3/6+bd/+vm
-        3f/r5t3/6+bd/+vm3f/s5t3/7Obd/+zm3f/s5t3/7Obd/+vm3f/r5t3/7Obd/+vm3P/r5dv/6+Xc/+vl
-        3P/r5dz/6+Xc/+vl3P/r5dz/6OPZ5ujf1jkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2traB+jl2kXq5Nuj6uXa2Ork
-        2/Pp5Nr+6+Xc/+Td1P/GvbH/qJuN/5yOf/+ajX3/mo19/5qNff+ajXz/mox9/5qMff+ZjH3/mox8/5qM
-        ff+ajX3/mox9/5mMff+ajH3/mox8/5mMff+ajX3/mo19/5qMff+ajX3/mo19/5qNff+ajX3/m41+/56Q
-        gf+topX/zsW7/+fh2P/r5dz/6eTa/url2vbp5Nrd6eTZpenj2VLf398IAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAA2traB+Tk2x3r49hC5+LYdr60p72EdGL9YU85/1tHMf9bRzH/W0cx/1tHMf9cSDH/W0cx/1xH
-        Mf9cSDH/W0gx/1xHMv9cSDL/XEgy/1xHMv9bRzH/XEgy/1xIMf9bRzH/XEcx/1tHMf9cRzL/XEcx/1tH
-        Mf9cRzL/XEgx/1tHMf9bRzH/XEgy/2dTP/+PgHD4zcO4uefi2nbq49hJ6OHZItra2gcAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWJSPT5XQy3XXEcx/11IMv9cSDL/XEgy/1xI
-        Mv9cSDL/XEgx/1xIMv9cSDL/XEgy/1xIMv9cSDL/XEgx/1xIMf9bSDH/XEcx/1xHMv9cRzH/XEgx/1xH
-        Mf9cRzL/W0cx/1xHMf9bRzH/XEgy/1xIMv9cRzH/XEgy/11IMv9dSTP/W0cx/mBNN89oVj8sAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHNcURZcSTPAXEcy/11I
-        M/9eSjT/c2BN/4x8af+RgnD/kIJw/5CBb/+Qgm//kYJv/5CBb/+Rgm//kIJw/5CCb/+QgW//kIJv/5CC
-        b/+QgW//kIFv/5CCb/+Qgm//kIJw/5CCb/+Qgm//kIFv/5CCb/+Qgm//kIJw/4d3ZP9sWUT/XUkz/11I
-        M/9bRzH9WkcyrH9vXxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AABiTjpbXEcx+F1JM/9fSzb/koNx/8i+sP/Rybz/0cm7/9HJvP/Rybv/0cm8/9HJu//Rybv/0cm8/9HJ
-        u//RyLv/0ci7/9HJu//Rybz/0cm8/9HJvP/Rybz/0cm8/9HJvP/Rybz/0cm8/9HIu//QyLv/0ci8/9HI
-        u//Qx7r/wbeo/4JyX/9dSTP/XUky/11JM/RsWEdLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAACZZmYFXEc0oFxIMf9cSDL/fm1a/8vCtP/RyLv/0ci7/9DIu//QyLv/0Mi7/9DI
-        u//QyLv/0Mi6/9DIu//QyLr/0Me6/9DIu//RyLv/0Mi7/9DIu//QyLv/0Mi7/9HIu//QyLv/0Mi7/9DI
-        u//QyLv/0Me6/9DIu//QyLr/0Mi7/9DIu//Duav/cV5K/11IMv9bRzH/Xks2h////wEAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeGlaEV1INMhdSDL/XUgz/6WYiP/RyLv/0ci7/9DI
-        u//QyLv/0Mi7/9DIuv/QyLv/0Mi6/9DIuv/QyLv/0Me6/9DHuv/QyLv/0ci7/9DIu//QyLv/0Mi7/9HI
-        u//QyLv/0ci7/9DIu//RyLv/0Mi7/9DIu//Qx7r/0Me6/9DHuv/Qx7r/0Mi7/5OFc/9cSDL/XUky/1hE
-        L6eqVVUDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9VPxhYRC/TXUgy/2BN
-        N/+2qpv/0ci7/9DIuv/QyLv/0Mi7/9DIu//RyLv/0Mi7/9DHu//Qx7r/0Mi7/9DIuv/QyLr/0Mi7/9HI
-        u//RyLv/0Mi7/9DIu//QyLr/0Mi7/9HIu//QyLv/0ci7/9DIu//RyLv/0Mi7/9DIuv/Qx7r/0Mi6/9DI
-        u/+lmIj/XEgz/11JM/9gTDjBnImJDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AABzYU4qXUs0511IM/9mUj3/vrOl/9DIuv/Qx7r/0Me6/87FuP+vo5T/opWF/8O4q//Qx7v/0Mi6/9DI
-        uv/QyLv/0Me6/87Guf+2qpv/p5qK/8S6rP/QyLr/0Mi6/9DIuv/QyLv/0Mi6/9DHuv+3rJ3/oJOC/7qv
-        oP/Px7r/0Me6/9DHuv/Qx7r/r6OT/15KNP9dSTP/WUQvzWNGOBIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAW0cyMllFLuxdSTP/a1hD/8S6rP/QyLr/0Me7/9DIuv+0qJj/Yk86/1xI
-        Mv+Dc2D/zsS3/9DIuv/Qx7v/0Me6/9DHuv+4rZ//ZlQ//1xIM/+BcF3/zMO2/9DIu//Qx7r/0Me7/9DI
-        uv/CuKr/bVpG/1xIMv9wXkr/xLqt/9DHuv/QyLr/0Me6/7esnf9hTTj/XUkz/15LNt97bV4jAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGtaSUxcSTP4XUkz/3FfS//Jv7H/0Me6/9DH
-        uv/RyLv/o5WE/1xIMf9dSDL/dmRR/8vCtf/Qx7r/0Me6/9DHuv/Qx7r/qp6O/11JM/9dSDL/bltG/8e9
-        r//Qx7r/0Me6/9DIu//Qx7v/vbOk/2VRPf9dSDP/Y086/7muoP/Qx7r/0Me6/9DHu/+/tKX/ZlI9/11I
-        M/9bRjHoXk01KwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbRzJWWkYv+l1J
-        M/95Z1T/zMO2/9DHuv/QyLv/0Mi7/5uOfP9cSDH/XUgy/3tqV//NxLf/0Me6/9DHuv/Qx7r/0Me6/6uf
-        j/9dSTP/XEgy/25bRv/Hvq//0Mi6/9DHuv/Qx7r/0Me6/8K3qf9oVUH/XUgz/2BMNv+0qZn/0Me6/9DH
-        uv/Qx7r/xbut/2xZRP9dSDP/XUkz83NkVEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAZ1RBeVtHMf5cSDL/gnJf/8/Guf/QyLr/0Me6/9DIu/+ThXP/XEcy/11IMv+BcV7/zsW5/9DH
-        uv/Qx7r/0Me6/9DHuv+soJH/XUkz/1xJMv9uXEf/yL6x/9DHuv/Qx7r/0Mi6/9DHu//GvK3/bFlF/11J
-        M/9eSjT/rqKR/9DHuv/Qx7r/0Me6/8rBs/9zYU3/XUgz/1xHMvliTjdOAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAVZBLIRbRzH/XEgz/41+a//QyLv/0Mi7/9DHuv/Qx7v/jH1r/1xI
-        Mv9dSDL/iHlm/8/Huv/Qx7r/0Me6/9DHuv/Px7r/raGS/15KNP9dSTL/b11I/8i/sf/QyLv/0Me6/9DH
-        uv/Qx7r/yL+x/3BeSv9cSTP/XUgz/6ibi//Qx7r/0Me6/9DHuv/Oxbf/e2pW/11IM/9bRzH9bFtIagAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL9/fwRjTjumXEgy/1xIMv+ajHr/0Me7/9DH
-        uv/Qx7r/z8e6/4V1Yv9dSDL/XEgy/4+Abv/RyLv/0Me6/9DHuv/Qx7r/0Me6/66jk/9eSjT/XUky/3Bd
-        Sf/Iv7H/0Me6/9DHuv/Qx7r/0Me6/8vCtP92ZFH/XUkz/1xIMv+gk4L/0Mi6/9DHuv/Qx7r/z8e5/4R0
-        Yf9dSDL/XEcy/15MN3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/f18IWkYwtF1I
-        Mv9dSDP/ppmI/9DHuv/Qx7r/0Me6/87FuP9/blr/XUkz/1xIMv+XiHf/0Mi7/9DHuv/Qx7r/0Me6/9DH
-        uv+vpJT/Xko0/11JMv9wXkn/yb+y/9DIuv/Qx7r/0Me6/9DHuv/Nxbf/fGtY/11JM/9cSDL/mYt5/9DI
-        u//Qx7r/0Me6/9DIuv+PgG7/XEgy/1xHMf9bSTSOf39/AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAk4Z4E2FNOc9dSTP/X0s1/6+klP/Qx7r/0Mi6/9DHuv/Mw7b/eWhT/11JM/9dSDL/n5GA/9DI
-        u//Qx7r/0Me6/9DHuv/Qx7r/sKSU/15KNP9dSDL/cV5K/8nAsv/Qx7r/z8e6/9DHuv/Qx7r/z8a5/4Jy
-        X/9dSDL/XEgy/5KDcf/QyLv/0Me6/9DHuv/Qx7r/nI58/1xHMf9cRzL/XUo1q39/fwQAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGVRRxlaRjDWXUkz/2JOOf+4rZ7/0Me6/9DHuv/Px7r/ycCz/3Ri
-        Tv9dSTP/XUkz/6aZif/Qx7r/0Me6/9DHuv/Qx7r/0Me6/7Cklf9eSjT/XUky/3FfS//JwLL/0Me6/9DH
-        uv/Qx7r/0Me6/9DHuv+Kemf/XEgy/1xIMv+Ke2n/0Mi6/9DHuv/Qx7r/0Me6/6eaif9cSDL/XEkz/11L
-        Nb6UlH8MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzaFYsX0s16V1JM/9nUz7/v7Wn/9DH
-        uv/Qx7r/0Me6/8e9sP9vXUj/XUkz/15JNP+toJH/0Me5/9DHuv/Qx7r/0Me6/8/Huv+wpJX/X0s0/11J
-        Mv9yX0v/ycCy/9DHuv/Qx7r/0Me6/9DHuv/QyLr/koNx/1xIMf9dSDL/g3Ng/8/Huf/Qx7r/0Me6/9DH
-        uf+wpJT/X0s1/1xJM/9dSTPQeF1QEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXUk1NFpE
-        MO1cSDL/bFlF/8W7rv/Qx7r/0Me6/9DHuv/Duqz/a1hD/11JMv9fSzb/s6eY/9DHuv/Qx7r/0Me6/9DH
-        uv/Px7r/sKWV/19LNf9dSDP/cmBL/8rBs//Qx7r/0Me6/9DHuv/Qx7r/0Mi7/5qLev9cRzH/XUgy/31s
-        Wf/Oxbj/0Me6/9DHuv/Px7n/uK2e/2JOOf9dSDP/XUgz3XdnVyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAGxcSVBcRzP5XEgy/3NhTP/KwbP/0Me6/9DHuv/Qx7r/v7Wn/2dUPv9dSDL/Yk44/7it
-        nv/Px7r/0Me6/9DHuv/Qx7r/z8e6/7Gllf9fSzX/XUkz/3JgTP/KwbP/0Me6/9DHuv/Qx7r/0Me6/9DH
-        uv+hlIP/XEgy/11JMv93ZVL/zMO1/9DHuv/Qx7r/z8a6/7+0pv9mUz7/XEgy/11KNOprWkktAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABaQzJaWkUv+1xIMv97alb/zsS3/9DHuv/Qx7r/0Me6/7uw
-        ov9kUDv/XUgy/2VRO/+9sqP/0Me6/9DHuv/Qx7r/0Me6/8/Huv+wpZX/X0s1/11IMv9yYEz/ysGz/9DH
-        uv/Qx7r/0Me6/9DHuv/Qx7r/qJyL/11IM/9dSTP/cmBM/8nAsv/Qx7r/0Me6/8/Huv/Eu63/bFpF/11I
-        Mv9cRjHxbFdHPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaVlGfltHMf5cSDL/hXVi/9DH
-        uf/Qx7r/0Me6/9DHuv+3rJz/YU04/11IMv9oVUD/wbeo/9DHuv/Qx7r/0Me6/9DHuv/Px7n/saWV/19L
-        Nf9dSTL/cmBL/8rBs//QyLr/0Me6/9DHuv/Qx7r/0Me6/66jk/9eSjT/XUkz/25bR//GvK//0Me6/8/H
-        uv/Qx7r/ysCz/3NhTf9cSDL/XEgy+mdUQlEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AV1J
-        NI5bRzH/XEgx/5GCcP/RyLv/0Me6/9DHuv/Qx7r/sqaW/19LNf9dSTL/bFlE/8W7rf/Qx7r/0Me6/9DH
-        uv/Qx7r/z8a6/7Gllv9fSzX/XUkz/3JgS//KwbP/0Me6/9DHuv/Qx7r/0Me6/8/Huv+0qZn/YEw3/11J
-        M/9qV0L/wriq/9DHuv/Qx7r/0Me6/83Et/97alb/XEgy/1tGMfxlVD9kAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAKqqfwZkUT2vXEgy/1xIMf+dj37/0Mi6/9DHuv/Qx7r/0Me6/6yfkP9eSTP/XUgy/3Be
-        Sv/Iv7L/0Me6/9DHuv/Qx7r/0Me6/8/Huv+xpZb/X0s1/11JM/9yYEz/ysGz/9DHuv/Qx7r/0Me6/9DH
-        uv/Px7r/uq+g/2NPOv9dSDP/ZlM9/72zpf/Qx7r/0Me6/9DHuv/Qx7r/hnZj/1xIM/9cRzL/ZFM/gQAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACNcVQJWkMvuFxIMf9cSDP/qJuL/9DHuv/Qx7n/0Me6/9DH
-        uv+lmYj/XEgy/11IMv91Y0//y8K1/9DHuv/Qx7r/0Me6/9DHuv/Px7r/saaW/19LNf9dSTL/cmBL/8rB
-        s//Qx7r/0Me6/9DHuv/Qx7r/0Me6/760pf9mUj3/XUgy/2NPOv+5rp//0Me6/9DHuv/Qx7r/0Mi7/5GC
-        cP9cSDL/XEcy/15JNpL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf3NoFl5LNtJcSDL/X0s1/7Km
-        lv/Qx7r/0Me6/9DHuv/RyLr/n5GA/1xIMv9cSDL/e2pW/87Et//Qx7r/0Me6/9DHuv/Qx7r/0Me6/7Gm
-        lv9fSzX/XUky/3FfSv/JwLL/0Me6/9DHuv/Qx7r/0Me6/9DHuv/CuKr/aVZC/11IM/9gTDb/tKiZ/9DH
-        uv/Qx7r/0Me6/9DHuv+dj37/XEgy/1xIMv9hTTqvf39/BgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRR
-        PxxZRS3ZXEgy/2JOOf+5rp//z8e6/9DHuv/Qx7r/0ci7/5eJd/9cRzL/XEgy/4BwXP/Pxrn/0Me6/9DH
-        uv/QyLr/0Me6/8/Huv+xpZb/X0s1/11IMv9xX0r/ycCy/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/xryu/25b
-        Rv9dSDP/Xko0/66ikv/Qx7n/0Me6/9DHuv/Qx7r/qJuL/11JM/9dSTP/W0Yxu4tzXAsAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAB0X08wXUk061xIMv9nVD//v7Wn/9DHuf/Qx7r/0Me6/9HIu/+PgG3/XEgx/1xI
-        Mv+Hd2T/0Me6/9DHuv/Qx7r/0Me6/9DHuv/Px7r/saaW/19LNf9dSDL/cV5K/8nAsv/Qx7r/0Me6/9DH
-        uv/Qx7r/0Me6/8nAsv9yYEv/XUgz/11JM/+nmor/0Ma5/9DHuv/Qx7r/0Me6/7Gmlv9fSzX/XUkz/15K
-        NdJzXFEWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAW0QyOFlFLu9dSDL/bVpG/8W7rf/Qx7r/0Me6/9DH
-        uv/QyLr/h3hl/1xIMv9cSDH/jn5s/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/7Gllv9fSzX/XUky/3Be
-        Sf/Iv7L/0Me6/9DHuv/Qx7r/0Me6/9DHuv/Mw7X/d2VS/11IM/9cSDL/npGA/9DHuv/Qx7r/0Me6/9DH
-        uf+6r5//Y085/11JM/9aRi/aZlU7HgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGtZRlNcSDL6XUgz/3Vj
-        Tv/KwbP/z8e6/9DHuv/Qx7r/z8a5/4BwXP9cSDL/XEcx/5SGdP/Qx7v/0Me6/9DHuv/Qx7r/0Me6/9DH
-        uv+xpZb/X0s1/11JMv9wXkn/yL+x/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/zsW3/3xsWP9cSDL/XEgy/5eI
-        d//QyLr/0Me5/9DHuv/Qx7r/wban/2hVP/9dSDL/XUg062pVRTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AABfTThjW0Yw/F1IM/99bFj/zsW4/9DHuv/Qx7r/0Me6/87Ft/96aVX/XEgy/1xHMf+cjnz/0Mi6/9DH
-        uv/Qx7r/0Me6/9DHuv/Px7r/sKWV/19KNP9dSDL/b11I/8e+sf/Qx7r/0Me6/9DHuv/Qx7r/0Me6/8/G
-        uf+Dcl//XEgy/1xIMv+PgG7/0Me6/9DHuv/Qx7r/0Me5/8a8rv9uW0b/XUky/1tHMfJrW0dAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAaVZDhVtHMv9cSDL/h3hl/9DHuv/Qx7r/0Me6/9DHuv/LwrT/dWNP/1xI
-        Mv9cSDL/opWE/9DHuv/Qx7r/0Me6/9DHuv/Qx7n/z8a5/7CklP9eSjT/XEgy/25bRv/Hva//0Me6/9DH
-        uv/Qx7r/0Me6/8/Huv/Qx7r/inpo/1xIMv9dSDL/h3dl/8/Huf/Qx7r/0Me6/9DHuf/KwbP/dWNP/11J
-        Mv9cSDL7ZFNBVgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf39/AltGMZFcRzH/XEgx/5OEcf/QyLr/0Me6/9DH
-        uv/Qx7r/yL+x/3BeSv9cSDL/XUkz/6ici//Qx7r/0Me6/9DHuv/Qx7r/0Me6/8/Guv+vo5T/Xko0/1xI
-        Mv9sWkX/xryu/9DHuv/Qx7r/0Me6/9DHuv/Px7r/0Mi7/5KDcf9cSDL/XUky/4BwXf/Oxrj/0Me6/9DH
-        uv/Px7r/zsS3/31sWP9dSDP/W0Yw/WRQPWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJGRbQdhTTmyXUgy/1xI
-        Mf+fkoH/0Mi6/9DHuv/Qx7r/0Me6/8W7rf9sWUX/XUgy/15KNP+uopL/0Me6/9DHuv/Qx7r/0Me6/8/H
-        uv/Pxrn/rqKT/15KNP9dSDL/a1lD/8W7rf/Qx7r/0Me6/9DHuv/Px7r/z8e6/9DIu/+Zi3r/XEgy/11J
-        Mv96aVX/zcS2/9DHuv/Qx7n/0Me6/8/Guf+Hd2T/XEgy/1xHMv9jUDuFAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AABzXEULWEIsu11IMv9dSTP/q56N/9DHuv/Qx7r/0Me6/9DHuv/Hva//cF1J/1xIMv9iTzn/t6yd/9DH
-        uv/Px7r/z8e6/9DHuv/Qx7r/z8a5/7arnP9jTzr/XEgx/3NhTf/Jv7H/0Me6/9DHuv/Qx7r/0Me6/8/H
-        uv/Qx7r/p5uK/15KM/9cSDL/fm1Z/83Etv/Qx7r/0Me6/9DHuv/Qx7r/koNx/1xIMv9dSDL/XEczlf//
-        /wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAdGpfGF5KNdVdSDL/YEw2/7OomP/Qx7r/0Me6/9DHuv/Qx7r/z8e5/6+j
-        k/+Kemj/oZSC/8zDtv/Qx7r/z8e5/8/Huv/Qx7r/0Me6/9DHuv/NxLf/ppmI/41+a/+0qZn/0Me6/9DH
-        uv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/8i/sf+ai3r/jX1q/7isnf/Qx7n/0Me6/9DHuv/Qx7n/z8e5/56R
-        f/9cSDL/XEgy/19LN7KRbW0HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGlaSyJaRjHeXUgy/2RRO/+8sKH/0Me6/9DH
-        uv/Qx7n/0Me6/9DHuv/Qx7r/0Me5/9DHuv/Qx7r/0Me6/8/Huv/Qx7r/0Me6/8/Huv/Pxrn/0Me6/9DH
-        uv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/8/Huv/Qx7r/0Me6/8/Huf/Px7n/0Me6/9DHuv/Qx7r/z8e5/9DH
-        uv/Px7n/0Me5/8/Huf+qno3/XUo0/11JM/9YRTC+ampVDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuW0g1Xkk07l1I
-        Mv9qV0L/wrip/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/0Me5/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/9DH
-        uv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/8/Huv/Qx7r/0Me6/8/Huv/Qx7r/0Me6/9DHuv/Px7n/0Me6/9DH
-        uv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/9DHuf/Px7n/s6iY/2BMNv9dSTP/XEk01WpVShgAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAX0s3QFpFMPNdSDL/b11I/8O4p//Jv67/yb+u/8m/rv/Jv67/yb+u/8m/rv/Jv67/yb+v/8m/
-        r//Jv6//yr+v/8q/r//Jv6//yb+v/8m/r//Jv6//yb+v/8m/r//Kv6//yb+v/8m/r//Jv6//yb+v/8q/
-        r//Jv6//yb+u/8m/r//Jv6//yb+v/8m/r//Jv67/yb+v/8m/r//Kv6//ysCw/7ism/9kUDv/XUkz/1tH
-        MuFuYFIlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGdUQFtcRzH8XUgy/3RiTf+9sJv/wLOe/7+znv+/s57/v7Oe/7+y
-        nf+/sp3/v7Od/7+ynv+/sp3/v7Ke/7+ynf+/sp7/wLOe/8Cznv+/s57/v7Oe/7+znv+/sp7/v7Kd/7+y
-        nf+/sp3/v7Oe/7+znv+/s57/v7Oe/7+znv+/s53/v7Od/7+ynf+/sp7/v7Oe/7+znv/As57/wLOe/8C0
-        n/+1qJP/aFU//11IM/9cSDPvZlhENAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf2pVDGlWSDVVQCqDWUUw/VxIMv92ZE//rqCL/66h
-        jP+uoYz/rqGM/66hjP+uoIz/rqCL/66gi/+uoIv/rqCL/66gi/+uoIv/rqGM/66hjP+voYz/rqGM/6+h
-        jP+uoYz/rqCM/66gi/+uoYz/rqGM/66hjP+uoYz/rqGM/66hjP+uoYz/rqCL/66hjP+uoIz/rqGM/66h
-        jP+voYz/r6GM/66hjP+uoYz/qZuG/2pXQv9cSTP/WUQu81A8JWVmU0Q0ZkxMCgAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhWQ6NbRzLsWkYw91xI
-        Mv9cSDL/Xko1/2NQOf9jTzn/Y085/2NPOf9iTzn/Yk85/2JPOf9iTzn/Yk85/2NPOf9jTzn/Y085/2NP
-        Of9jTzn/Y085/2JPOv9iTzr/Yk85/2NPOf9jTzr/Y085/2JPOf9iTzn/Y085/2NPOf9jTzn/Y085/2NP
-        Of9jTzn/Yk85/2JPOf9jTzn/Y085/2JPOf9iTzn/Yk85/2JPOf9dSTT/XEgz/1xHMf5aRS/2WkYx7FpF
-        MY8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AABaRC78XEgy/1xIMv9cSDP/XUgy/1xIMv9dSDP/XUgz/11IMv9dSDL/XEgy/11IMv9cSDL/XUgy/11I
-        M/9dSDP/XUky/11IM/9dSDL/XUgy/11IM/9dSDP/XUkz/11JMv9dSDL/XUgz/11IMv9dSDL/XEgy/1xI
-        Mv9dSDL/XEgy/11IMv9dSDL/XEgy/1xIMv9cSDP/XUgy/11IMv9dSDL/XUgy/1xIMv9dSTL/XUgz/1xI
-        Mv9cSDL/XEky/1xIMv9XQiz8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAVkEr/1xIMv9dSTP/YUw2/2NON/9jTjf/Y043/2JON/9jTjf/Y043/2NO
-        N/9jTjf/Y043/2NON/9jTjj/Y043/2JON/9jTjf/Y043/2NON/9jTjf/Y044/2NOOP9jTjf/Y043/2NO
-        N/9iTjf/Y043/2NON/9iTjf/Y043/2NON/9jTjf/Y043/2NON/9iTjf/Y043/2NON/9jTjf/Y043/2NO
-        N/9jTjf/Y043/2NON/9jTjf/YUw2/11JM/9cSTL/Uj4o/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFZBK/9cSDP/YEs1/4RvUv+OeFv/jnlb/454
-        W/+OeFv/jnhb/455W/+OeFv/jnhb/454W/+OeVv/jnlb/455W/+OeFv/jnlb/455W/+OeVv/jnlb/455
-        W/+OeVv/jnlb/455W/+OeFv/jnhb/454W/+OeVv/jnlb/454W/+OeVv/jnlb/455W/+OeVv/jXhb/454
-        W/+OeFv/jnhb/455W/+OeVv/jnlb/455W/+OeVv/jnhb/4VvU/9gSzX/XUkz/1I9KP8AAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWQSr/XUgz/2FM
-        Nv+KdVj/lH5g/5R+YP+Tfl//lH5g/5R+YP+Uf2D/lH9g/5R/YP+UfmD/lH5g/5R+YP+Uf2D/lH9g/5R/
-        YP+Uf2D/lH9g/5R/YP+Uf2D/lH9g/5R+YP+Uf2D/lH9g/5R/YP+UfmD/lH9g/5R/YP+Uf2D/lH5g/5R+
-        YP+UfmD/lH9g/5R+YP+UfmD/lH5g/5R+YP+Uf2D/lH9g/5R/YP+Uf2D/lH9g/5R/YP+KdVj/YUw2/11J
-        Mv9SPSj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAVkEr/11JM/9hTTb/inVY/5R+YP+UfmD/lH5f/5R/YP+Uf2D/lH5g/5R+YP+Uf2D/lH5g/5R+
-        YP+UfmD/lH5g/5R+YP+UfmD/lH9g/5R/YP+UfmD/lH9g/5R/YP+UfmD/lH9g/5R+YP+UfmD/lH5g/5R+
-        YP+Uf2D/lH5g/5R+YP+Uf2D/lH9g/5R/YP+UfmD/lH5g/5R+YP+UfmD/lH5g/5R+YP+Uf2D/lH5g/5R+
-        YP+Ufl//inVY/2FMNv9dSTL/Uj0o/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFZBKv9dSTP/YU02/4p1WP+UfmD/lH5g/5R+YP+Uf2D/lH5f/5R+
-        YP+UfmD/lH5g/5R/YP+UfmD/lH5g/5R+YP+UfmD/lH5g/5R+YP+Uf2D/lH9g/5R/YP+Uf2D/lH9g/5R/
-        YP+Uf2D/lH5f/5R/YP+UfmD/lH5g/5R+X/+UfmD/lH9g/5R+YP+UfmD/lH9g/5R+YP+Uf2D/lH9g/5R+
-        X/+UfmD/lH9g/5R+YP+Uf2D/lH5f/4p1WP9hTDb/XUkz/1M+KP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYQyz/XUgz/2BLNf+GcFT/lH5g/5R/
-        YP+Uf2D/lH9g/5R/YP+Uf2D/lH5g/5R+YP+Uf2D/lH9g/5R+YP+UfmD/lH9g/5R/YP+Uf2D/lH9g/5R/
-        YP+Uf2D/lH9g/5R+YP+Uf2D/lH9f/5V/YP+Vf2D/lH9g/5R/YP+Uf2D/lH5g/5R/YP+Uf2D/lH9g/5R/
-        YP+Uf2D/lH9g/5R/YP+Uf2D/lH5g/5R/YP+Vf2D/lH9g/5N+X/+HclX/YEs1/11JM/9VPyr/AAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX0s46F1I
-        Mv9dSDL/ZVE5/3FcQ/9yXUT/cl1E/3JdRP9yXUT/cl1E/3JdRP9yXUX/c15F/3NeRP9yXUT/c11E/3Jd
-        RP9yXUT/cl5E/3NeRP9zXkT/c15E/3NeRP9zXkT/c15E/3JdRP9zXUT/c11E/3JdRP9zXkT/cl1E/3Jd
-        RP9yXUT/c15E/3NeRP9yXUT/c15E/3NeRP9zXUT/c11E/3JdRP9zXUT/c11E/3JdRP9xXEP/ZlI6/11J
-        M/9dSDL/Xko14wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAGBLOHpaRS/4XEgy/11IMv9cSDP/XUgy/1xIMv9dSDL/XEgz/11IM/9dSDL/XEgz/11I
-        Mv9cSDL/XUgy/1xIMv9cSDP/XEgy/1xIMv9dSDL/XEgy/11IMv9cSDL/XEgy/11IMv9dSDL/XEgy/11I
-        Mv9cSDL/XEgy/1xIMv9cSDL/XEgy/1xIMv9cSDL/XEgy/1xIMv9cSDL/XEgy/1xIM/9cSDL/XUgy/1xI
-        Mv9cSDL/XUgy/11IMv9dSDP/XEYy+GRQPnIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABfPy8QV0IvkVtGMvJbRjD+W0gx/1xIMf9cSDH/XEgy/1xI
-        Mv9cSDL/XEgx/1xHMf9cSDL/XEgy/1xJM/9dSDP/XUgy/1xHMf9cRzH/XEcx/1xHMf9cRzH/W0cx/1tH
-        Mf9cRzH/XEgx/1tHMf9cRzH/XEcx/1xHMf9bRzL/W0cy/1xIMv9cSDL/XEgy/1xHMf9cSDH/XEgx/1xI
-        Mf9cSDL/XEgx/1xHMf9cRzH/XEcx/1xHMf9cRzH+W0Yw7GVRQYx/b18QAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHV1Yg1jUT9IaVVDjGlX
-        RaZpV0WmaVdFpmlXRaZpV0WmaVdFpmhXRaZoV0amaVlGpmlXQ8RcSDL+XUgy/1xHMfFnVUOvaVdFpmlX
-        RqZpV0WmaVdFpmlWRaZoVkWmaFZFpmlXRqZpV0WmaVdFpmlXRqZpV0amaVlIpmVSP7lbRzD6XEgy/1pH
-        Me9qVkWtbVpIpmtZSKZpWUamaVdGpmlXRaZpV0WmaVdFpmlXRaZvXkula1dEg2lURD9xcVQJAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAH9/fwKqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgNvXkpZXEkz+1xI
-        M/9XQyzYW0gtHKqqqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qq
-        qgNTPSc6WEQt8FxIMv9WQi7XW0g/HP+qqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgOqqqoD//+qA///
-        /wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAbFxJUFxHM/hdSTL/WEMu3FJBMR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAWkc0RFlGMPRcSDL/WEQw2GdLQhsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGJLOSxZRTDmXUgy/1tHMPdjTzuAcGFSIks8LRFPPy8QTz8vEE8/
-        LxBfPy8QTz8vEF8/LxBPPy8QTz8vEE8/LxBdUDUTZ1FBL1hCLqRbRzL+XUgy/1lEMcRvT08QAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzc1wLX0s5qVxHMv5cSDL/XEcy+VxH
-        Md1WQSvLVkIty1ZCK8tWQivLV0Ity1dCLctXQi3LV0Ity1ZCLctWQi3LV0ItzltHMudbRjD8XEgy/1pF
-        MPlVQy5u////AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHVl
-        VjJfSzfOWkYw/VxHMv9cSDL/XUgy/11IMv9dSDL/XUgy/11IM/9dSDL/XEgy/1xIMv9cSDH/XUgx/11I
-        Mf9dSDL/XEgy/1lFL/dSPCiYVEY4EgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAD///8BaFRHJ15LOJFgSzjrVkEq/1Q/J/9UPyj/VEAo/1Q/KP9UPyj/VT8o/1Q/
-        J/9TPyf/VD8n/1Q/J/9UPyf/WkQv/2BNONdfSjduTz8vEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAA//wAAAAAf///wAAAAAAH//+AAAAAAAP//4AAAAAAA///gAAAAAAD///gAAAAAA////gAAAAA
-        f///+AAAAAA////4AAAAAD////AAAAAAH///8AAAAAAf///wAAAAAB////AAAAAAH///8AAAAAAf///w
-        AAAAAB////AAAAAAH///8AAAAAAf///gAAAAAB///+AAAAAAH///4AAAAAAP///gAAAAAA///+AAAAAA
-        D///4AAAAAAP///gAAAAAA///+AAAAAAD///4AAAAAAP///gAAAAAA///8AAAAAAD///wAAAAAAP///A
-        AAAAAAf//8AAAAAAB///wAAAAAAH///AAAAAAAf//8AAAAAAB///wAAAAAAH///AAAAAAAf//8AAAAAA
-        B///gAAAAAAH//+AAAAAAAf//4AAAAAAA///gAAAAAAD//+AAAAAAAP//4AAAAAAA///gAAAAAAD//+A
-        AAAAAAP//gAAAAAAAP/+AAAAAAAA//4AAAAAAAD//gAAAAAAAP/+AAAAAAAA//4AAAAAAAD//gAAAAAA
-        AP/+AAAAAAAA//4AAAAAAAD//gAAAAAAAP/+AAAAAAAA//4AAAAAAAD//wAAAAAAAf//wAAAAAAH////
-        8H/8H//////wAAAf//////AAAB//////+AAAP//////4AAB///8=
-</value>
+  <data name="&gt;&gt;chkNoProgress.Name" xml:space="preserve">
+    <value>chkNoProgress</value>
   </data>
-  <data name="notifyIcon.Text" xml:space="preserve">
-    <value>NanoBin — монитор корзины</value>
-  </data>
-  <data name="chkHideOnRun.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkHideOnRun.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 174</value>
-  </data>
-  <data name="chkHideOnRun.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkHideOnRun.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 24</value>
-  </data>
-  <data name="chkHideOnRun.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chkHideOnRun.Text" xml:space="preserve">
-    <value>Run minimized</value>
-  </data>
-  <data name="&gt;&gt;chkHideOnRun.Name" xml:space="preserve">
-    <value>chkHideOnRun</value>
-  </data>
-  <data name="&gt;&gt;chkHideOnRun.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkHideOnRun.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkHideOnRun.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="chkshowNotifications.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkshowNotifications.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 206</value>
-  </data>
-  <data name="chkshowNotifications.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkshowNotifications.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 24</value>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="chkshowNotifications.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="chkshowNotifications.Text" xml:space="preserve">
-    <value>Show notifications</value>
+  <data name="chkNoSound.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;chkshowNotifications.Name" xml:space="preserve">
-    <value>chkshowNotifications</value>
+  <data name="&gt;&gt;menuExit.Name" xml:space="preserve">
+    <value>menuExit</value>
+  </data>
+  <data name="&gt;&gt;btnEmpty.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="logContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 34</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 20</value>
+  </data>
+  <data name="opneRecycleBinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 30</value>
   </data>
   <data name="&gt;&gt;chkshowNotifications.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkshowNotifications.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnEmpty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkshowNotifications.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 206</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 50</value>
+  </data>
+  <data name="trayMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 94</value>
+  </data>
+  <data name="&gt;&gt;chkNoProgress.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;chkshowNotifications.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 244</value>
+  <data name="chkHideOnRun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 174</value>
   </data>
-  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 96</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="btnEmpty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 38</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Recycle Bin</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="menuExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 30</value>
   </data>
   <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="chkNoProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="chkNoProgress.Text" xml:space="preserve">
+    <value>Hide Progress</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>NanoBin — Recycle Bin Monitor</value>
+  </data>
+  <data name="&gt;&gt;chkNoProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkNoSound.Name" xml:space="preserve">
+    <value>chkNoSound</value>
+  </data>
+  <data name="btnOpen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="btnEmpty.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;opneRecycleBinToolStripMenuItem.Name" xml:space="preserve">
+    <value>opneRecycleBinToolStripMenuItem</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>144, 144</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>559, 501</value>
+  <data name="&gt;&gt;chkshowNotifications.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lstLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 347</value>
+  </data>
+  <data name="chkAutoClean.Text" xml:space="preserve">
+    <value>Auto Clean:</value>
+  </data>
+  <data name="lblStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="menuExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="opneRecycleBinToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open Recycle Bin</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 244</value>
+  </data>
+  <data name="btnOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkNoConfirm.Text" xml:space="preserve">
+    <value>No Confirmation</value>
+  </data>
+  <data name="chkNoSound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 142</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon.Name" xml:space="preserve">
+    <value>notifyIcon</value>
+  </data>
+  <data name="&gt;&gt;btnDrives.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkNoConfirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 78</value>
+  </data>
+  <data name="numMaxSizeGb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 26</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1144,46 +707,504 @@
         8H/8H//////wAAAf//////AAAB//////+AAAP//////4AAB///8=
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 96</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>NanoBin — Recycle Bin Monitor</value>
+  <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /wLi4uIJ6enfGObf2Snp4Ng76uPcSeri2mPo49ln6ePajeji15bn4teW6ePZnevk3cTq5dvK6eTayunj
+        2srp49rK6ePayurj2srp5NrK6uTbyurl3Mrq5Nur5+LXluji15bq49mW6uTbe+ri2GPp5Nph6OTYQ+3k
+        2znp4tQk5ubaFf7a2gf///8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /wHw8OIS7OjaOOrk2mLp4tqR6uTat+rk2tTp5Nrl6uTb8url2/bq5Nv96uTb/evl3P/r5dz/6+Xc/+vm
+        3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vm3P/r5tz/6+Xc/+rl
+        2/7r5dv96+Xc/Ovk2/Tq5dvx6uTa4evl287p49mx6ePZjerk2mLm4dc07+/fEP///wEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAOLixgnp4Nhd6eTbwurl2+7q5Nv86+Xc/+vl3P/r5dz/6+bc/+vl3P/r5dz/6+Xc/+vl
+        3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl3P/r5tz/6+bc/+vm3f/r5dz/6+bc/+vl
+        3P/r5tz/6+Xc/+vm3P/r5t3/6+Xc/+vm3f/r5tz/6+bc/+vm3f/r5tz/6+bc/+vl3P/q5Nv86uTb6unj
+        2sHo5Npo6enpDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADm39Mp6uTZ2+rl3P/r5dz/6+Xc/+vl3P/r5dz/6+Xc/+vl
+        2//r5dz/7Obd/+zm3P/r5t3/6+bd/+vm3P/s5t3/7Obc/+zm3f/r5dz/7Obc/+vm3f/r5t3/6+bd/+vm
+        3f/r5t3/6+bd/+vm3f/s5t3/7Obd/+zm3f/s5t3/7Obd/+vm3f/r5t3/7Obd/+vm3P/r5dv/6+Xc/+vl
+        3P/r5dz/6+Xc/+vl3P/r5dz/6OPZ5ujf1jkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2traB+jl2kXq5Nuj6uXa2Ork
+        2/Pp5Nr+6+Xc/+Td1P/GvbH/qJuN/5yOf/+ajX3/mo19/5qNff+ajXz/mox9/5qMff+ZjH3/mox8/5qM
+        ff+ajX3/mox9/5mMff+ajH3/mox8/5mMff+ajX3/mo19/5qMff+ajX3/mo19/5qNff+ajX3/m41+/56Q
+        gf+topX/zsW7/+fh2P/r5dz/6eTa/url2vbp5Nrd6eTZpenj2VLf398IAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA2traB+Tk2x3r49hC5+LYdr60p72EdGL9YU85/1tHMf9bRzH/W0cx/1tHMf9cSDH/W0cx/1xH
+        Mf9cSDH/W0gx/1xHMv9cSDL/XEgy/1xHMv9bRzH/XEgy/1xIMf9bRzH/XEcx/1tHMf9cRzL/XEcx/1tH
+        Mf9cRzL/XEgx/1tHMf9bRzH/XEgy/2dTP/+PgHD4zcO4uefi2nbq49hJ6OHZItra2gcAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWJSPT5XQy3XXEcx/11IMv9cSDL/XEgy/1xI
+        Mv9cSDL/XEgx/1xIMv9cSDL/XEgy/1xIMv9cSDL/XEgx/1xIMf9bSDH/XEcx/1xHMv9cRzH/XEgx/1xH
+        Mf9cRzL/W0cx/1xHMf9bRzH/XEgy/1xIMv9cRzH/XEgy/11IMv9dSTP/W0cx/mBNN89oVj8sAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHNcURZcSTPAXEcy/11I
+        M/9eSjT/c2BN/4x8af+RgnD/kIJw/5CBb/+Qgm//kYJv/5CBb/+Rgm//kIJw/5CCb/+QgW//kIJv/5CC
+        b/+QgW//kIFv/5CCb/+Qgm//kIJw/5CCb/+Qgm//kIFv/5CCb/+Qgm//kIJw/4d3ZP9sWUT/XUkz/11I
+        M/9bRzH9WkcyrH9vXxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABiTjpbXEcx+F1JM/9fSzb/koNx/8i+sP/Rybz/0cm7/9HJvP/Rybv/0cm8/9HJu//Rybv/0cm8/9HJ
+        u//RyLv/0ci7/9HJu//Rybz/0cm8/9HJvP/Rybz/0cm8/9HJvP/Rybz/0cm8/9HIu//QyLv/0ci8/9HI
+        u//Qx7r/wbeo/4JyX/9dSTP/XUky/11JM/RsWEdLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACZZmYFXEc0oFxIMf9cSDL/fm1a/8vCtP/RyLv/0ci7/9DIu//QyLv/0Mi7/9DI
+        u//QyLv/0Mi6/9DIu//QyLr/0Me6/9DIu//RyLv/0Mi7/9DIu//QyLv/0Mi7/9HIu//QyLv/0Mi7/9DI
+        u//QyLv/0Me6/9DIu//QyLr/0Mi7/9DIu//Duav/cV5K/11IMv9bRzH/Xks2h////wEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeGlaEV1INMhdSDL/XUgz/6WYiP/RyLv/0ci7/9DI
+        u//QyLv/0Mi7/9DIuv/QyLv/0Mi6/9DIuv/QyLv/0Me6/9DHuv/QyLv/0ci7/9DIu//QyLv/0Mi7/9HI
+        u//QyLv/0ci7/9DIu//RyLv/0Mi7/9DIu//Qx7r/0Me6/9DHuv/Qx7r/0Mi7/5OFc/9cSDL/XUky/1hE
+        L6eqVVUDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9VPxhYRC/TXUgy/2BN
+        N/+2qpv/0ci7/9DIuv/QyLv/0Mi7/9DIu//RyLv/0Mi7/9DHu//Qx7r/0Mi7/9DIuv/QyLr/0Mi7/9HI
+        u//RyLv/0Mi7/9DIu//QyLr/0Mi7/9HIu//QyLv/0ci7/9DIu//RyLv/0Mi7/9DIuv/Qx7r/0Mi6/9DI
+        u/+lmIj/XEgz/11JM/9gTDjBnImJDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABzYU4qXUs0511IM/9mUj3/vrOl/9DIuv/Qx7r/0Me6/87FuP+vo5T/opWF/8O4q//Qx7v/0Mi6/9DI
+        uv/QyLv/0Me6/87Guf+2qpv/p5qK/8S6rP/QyLr/0Mi6/9DIuv/QyLv/0Mi6/9DHuv+3rJ3/oJOC/7qv
+        oP/Px7r/0Me6/9DHuv/Qx7r/r6OT/15KNP9dSTP/WUQvzWNGOBIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAW0cyMllFLuxdSTP/a1hD/8S6rP/QyLr/0Me7/9DIuv+0qJj/Yk86/1xI
+        Mv+Dc2D/zsS3/9DIuv/Qx7v/0Me6/9DHuv+4rZ//ZlQ//1xIM/+BcF3/zMO2/9DIu//Qx7r/0Me7/9DI
+        uv/CuKr/bVpG/1xIMv9wXkr/xLqt/9DHuv/QyLr/0Me6/7esnf9hTTj/XUkz/15LNt97bV4jAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGtaSUxcSTP4XUkz/3FfS//Jv7H/0Me6/9DH
+        uv/RyLv/o5WE/1xIMf9dSDL/dmRR/8vCtf/Qx7r/0Me6/9DHuv/Qx7r/qp6O/11JM/9dSDL/bltG/8e9
+        r//Qx7r/0Me6/9DIu//Qx7v/vbOk/2VRPf9dSDP/Y086/7muoP/Qx7r/0Me6/9DHu/+/tKX/ZlI9/11I
+        M/9bRjHoXk01KwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbRzJWWkYv+l1J
+        M/95Z1T/zMO2/9DHuv/QyLv/0Mi7/5uOfP9cSDH/XUgy/3tqV//NxLf/0Me6/9DHuv/Qx7r/0Me6/6uf
+        j/9dSTP/XEgy/25bRv/Hvq//0Mi6/9DHuv/Qx7r/0Me6/8K3qf9oVUH/XUgz/2BMNv+0qZn/0Me6/9DH
+        uv/Qx7r/xbut/2xZRP9dSDP/XUkz83NkVEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAZ1RBeVtHMf5cSDL/gnJf/8/Guf/QyLr/0Me6/9DIu/+ThXP/XEcy/11IMv+BcV7/zsW5/9DH
+        uv/Qx7r/0Me6/9DHuv+soJH/XUkz/1xJMv9uXEf/yL6x/9DHuv/Qx7r/0Mi6/9DHu//GvK3/bFlF/11J
+        M/9eSjT/rqKR/9DHuv/Qx7r/0Me6/8rBs/9zYU3/XUgz/1xHMvliTjdOAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAVZBLIRbRzH/XEgz/41+a//QyLv/0Mi7/9DHuv/Qx7v/jH1r/1xI
+        Mv9dSDL/iHlm/8/Huv/Qx7r/0Me6/9DHuv/Px7r/raGS/15KNP9dSTL/b11I/8i/sf/QyLv/0Me6/9DH
+        uv/Qx7r/yL+x/3BeSv9cSTP/XUgz/6ibi//Qx7r/0Me6/9DHuv/Oxbf/e2pW/11IM/9bRzH9bFtIagAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL9/fwRjTjumXEgy/1xIMv+ajHr/0Me7/9DH
+        uv/Qx7r/z8e6/4V1Yv9dSDL/XEgy/4+Abv/RyLv/0Me6/9DHuv/Qx7r/0Me6/66jk/9eSjT/XUky/3Bd
+        Sf/Iv7H/0Me6/9DHuv/Qx7r/0Me6/8vCtP92ZFH/XUkz/1xIMv+gk4L/0Mi6/9DHuv/Qx7r/z8e5/4R0
+        Yf9dSDL/XEcy/15MN3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/f18IWkYwtF1I
+        Mv9dSDP/ppmI/9DHuv/Qx7r/0Me6/87FuP9/blr/XUkz/1xIMv+XiHf/0Mi7/9DHuv/Qx7r/0Me6/9DH
+        uv+vpJT/Xko0/11JMv9wXkn/yb+y/9DIuv/Qx7r/0Me6/9DHuv/Nxbf/fGtY/11JM/9cSDL/mYt5/9DI
+        u//Qx7r/0Me6/9DIuv+PgG7/XEgy/1xHMf9bSTSOf39/AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAk4Z4E2FNOc9dSTP/X0s1/6+klP/Qx7r/0Mi6/9DHuv/Mw7b/eWhT/11JM/9dSDL/n5GA/9DI
+        u//Qx7r/0Me6/9DHuv/Qx7r/sKSU/15KNP9dSDL/cV5K/8nAsv/Qx7r/z8e6/9DHuv/Qx7r/z8a5/4Jy
+        X/9dSDL/XEgy/5KDcf/QyLv/0Me6/9DHuv/Qx7r/nI58/1xHMf9cRzL/XUo1q39/fwQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGVRRxlaRjDWXUkz/2JOOf+4rZ7/0Me6/9DHuv/Px7r/ycCz/3Ri
+        Tv9dSTP/XUkz/6aZif/Qx7r/0Me6/9DHuv/Qx7r/0Me6/7Cklf9eSjT/XUky/3FfS//JwLL/0Me6/9DH
+        uv/Qx7r/0Me6/9DHuv+Kemf/XEgy/1xIMv+Ke2n/0Mi6/9DHuv/Qx7r/0Me6/6eaif9cSDL/XEkz/11L
+        Nb6UlH8MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzaFYsX0s16V1JM/9nUz7/v7Wn/9DH
+        uv/Qx7r/0Me6/8e9sP9vXUj/XUkz/15JNP+toJH/0Me5/9DHuv/Qx7r/0Me6/8/Huv+wpJX/X0s0/11J
+        Mv9yX0v/ycCy/9DHuv/Qx7r/0Me6/9DHuv/QyLr/koNx/1xIMf9dSDL/g3Ng/8/Huf/Qx7r/0Me6/9DH
+        uf+wpJT/X0s1/1xJM/9dSTPQeF1QEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXUk1NFpE
+        MO1cSDL/bFlF/8W7rv/Qx7r/0Me6/9DHuv/Duqz/a1hD/11JMv9fSzb/s6eY/9DHuv/Qx7r/0Me6/9DH
+        uv/Px7r/sKWV/19LNf9dSDP/cmBL/8rBs//Qx7r/0Me6/9DHuv/Qx7r/0Mi7/5qLev9cRzH/XUgy/31s
+        Wf/Oxbj/0Me6/9DHuv/Px7n/uK2e/2JOOf9dSDP/XUgz3XdnVyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAGxcSVBcRzP5XEgy/3NhTP/KwbP/0Me6/9DHuv/Qx7r/v7Wn/2dUPv9dSDL/Yk44/7it
+        nv/Px7r/0Me6/9DHuv/Qx7r/z8e6/7Gllf9fSzX/XUkz/3JgTP/KwbP/0Me6/9DHuv/Qx7r/0Me6/9DH
+        uv+hlIP/XEgy/11JMv93ZVL/zMO1/9DHuv/Qx7r/z8a6/7+0pv9mUz7/XEgy/11KNOprWkktAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABaQzJaWkUv+1xIMv97alb/zsS3/9DHuv/Qx7r/0Me6/7uw
+        ov9kUDv/XUgy/2VRO/+9sqP/0Me6/9DHuv/Qx7r/0Me6/8/Huv+wpZX/X0s1/11IMv9yYEz/ysGz/9DH
+        uv/Qx7r/0Me6/9DHuv/Qx7r/qJyL/11IM/9dSTP/cmBM/8nAsv/Qx7r/0Me6/8/Huv/Eu63/bFpF/11I
+        Mv9cRjHxbFdHPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaVlGfltHMf5cSDL/hXVi/9DH
+        uf/Qx7r/0Me6/9DHuv+3rJz/YU04/11IMv9oVUD/wbeo/9DHuv/Qx7r/0Me6/9DHuv/Px7n/saWV/19L
+        Nf9dSTL/cmBL/8rBs//QyLr/0Me6/9DHuv/Qx7r/0Me6/66jk/9eSjT/XUkz/25bR//GvK//0Me6/8/H
+        uv/Qx7r/ysCz/3NhTf9cSDL/XEgy+mdUQlEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AV1J
+        NI5bRzH/XEgx/5GCcP/RyLv/0Me6/9DHuv/Qx7r/sqaW/19LNf9dSTL/bFlE/8W7rf/Qx7r/0Me6/9DH
+        uv/Qx7r/z8a6/7Gllv9fSzX/XUkz/3JgS//KwbP/0Me6/9DHuv/Qx7r/0Me6/8/Huv+0qZn/YEw3/11J
+        M/9qV0L/wriq/9DHuv/Qx7r/0Me6/83Et/97alb/XEgy/1tGMfxlVD9kAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAKqqfwZkUT2vXEgy/1xIMf+dj37/0Mi6/9DHuv/Qx7r/0Me6/6yfkP9eSTP/XUgy/3Be
+        Sv/Iv7L/0Me6/9DHuv/Qx7r/0Me6/8/Huv+xpZb/X0s1/11JM/9yYEz/ysGz/9DHuv/Qx7r/0Me6/9DH
+        uv/Px7r/uq+g/2NPOv9dSDP/ZlM9/72zpf/Qx7r/0Me6/9DHuv/Qx7r/hnZj/1xIM/9cRzL/ZFM/gQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACNcVQJWkMvuFxIMf9cSDP/qJuL/9DHuv/Qx7n/0Me6/9DH
+        uv+lmYj/XEgy/11IMv91Y0//y8K1/9DHuv/Qx7r/0Me6/9DHuv/Px7r/saaW/19LNf9dSTL/cmBL/8rB
+        s//Qx7r/0Me6/9DHuv/Qx7r/0Me6/760pf9mUj3/XUgy/2NPOv+5rp//0Me6/9DHuv/Qx7r/0Mi7/5GC
+        cP9cSDL/XEcy/15JNpL///8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf3NoFl5LNtJcSDL/X0s1/7Km
+        lv/Qx7r/0Me6/9DHuv/RyLr/n5GA/1xIMv9cSDL/e2pW/87Et//Qx7r/0Me6/9DHuv/Qx7r/0Me6/7Gm
+        lv9fSzX/XUky/3FfSv/JwLL/0Me6/9DHuv/Qx7r/0Me6/9DHuv/CuKr/aVZC/11IM/9gTDb/tKiZ/9DH
+        uv/Qx7r/0Me6/9DHuv+dj37/XEgy/1xIMv9hTTqvf39/BgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRR
+        PxxZRS3ZXEgy/2JOOf+5rp//z8e6/9DHuv/Qx7r/0ci7/5eJd/9cRzL/XEgy/4BwXP/Pxrn/0Me6/9DH
+        uv/QyLr/0Me6/8/Huv+xpZb/X0s1/11IMv9xX0r/ycCy/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/xryu/25b
+        Rv9dSDP/Xko0/66ikv/Qx7n/0Me6/9DHuv/Qx7r/qJuL/11JM/9dSTP/W0Yxu4tzXAsAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAB0X08wXUk061xIMv9nVD//v7Wn/9DHuf/Qx7r/0Me6/9HIu/+PgG3/XEgx/1xI
+        Mv+Hd2T/0Me6/9DHuv/Qx7r/0Me6/9DHuv/Px7r/saaW/19LNf9dSDL/cV5K/8nAsv/Qx7r/0Me6/9DH
+        uv/Qx7r/0Me6/8nAsv9yYEv/XUgz/11JM/+nmor/0Ma5/9DHuv/Qx7r/0Me6/7Gmlv9fSzX/XUkz/15K
+        NdJzXFEWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAW0QyOFlFLu9dSDL/bVpG/8W7rf/Qx7r/0Me6/9DH
+        uv/QyLr/h3hl/1xIMv9cSDH/jn5s/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/7Gllv9fSzX/XUky/3Be
+        Sf/Iv7L/0Me6/9DHuv/Qx7r/0Me6/9DHuv/Mw7X/d2VS/11IM/9cSDL/npGA/9DHuv/Qx7r/0Me6/9DH
+        uf+6r5//Y085/11JM/9aRi/aZlU7HgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGtZRlNcSDL6XUgz/3Vj
+        Tv/KwbP/z8e6/9DHuv/Qx7r/z8a5/4BwXP9cSDL/XEcx/5SGdP/Qx7v/0Me6/9DHuv/Qx7r/0Me6/9DH
+        uv+xpZb/X0s1/11JMv9wXkn/yL+x/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/zsW3/3xsWP9cSDL/XEgy/5eI
+        d//QyLr/0Me5/9DHuv/Qx7r/wban/2hVP/9dSDL/XUg062pVRTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABfTThjW0Yw/F1IM/99bFj/zsW4/9DHuv/Qx7r/0Me6/87Ft/96aVX/XEgy/1xHMf+cjnz/0Mi6/9DH
+        uv/Qx7r/0Me6/9DHuv/Px7r/sKWV/19KNP9dSDL/b11I/8e+sf/Qx7r/0Me6/9DHuv/Qx7r/0Me6/8/G
+        uf+Dcl//XEgy/1xIMv+PgG7/0Me6/9DHuv/Qx7r/0Me5/8a8rv9uW0b/XUky/1tHMfJrW0dAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAaVZDhVtHMv9cSDL/h3hl/9DHuv/Qx7r/0Me6/9DHuv/LwrT/dWNP/1xI
+        Mv9cSDL/opWE/9DHuv/Qx7r/0Me6/9DHuv/Qx7n/z8a5/7CklP9eSjT/XEgy/25bRv/Hva//0Me6/9DH
+        uv/Qx7r/0Me6/8/Huv/Qx7r/inpo/1xIMv9dSDL/h3dl/8/Huf/Qx7r/0Me6/9DHuf/KwbP/dWNP/11J
+        Mv9cSDL7ZFNBVgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf39/AltGMZFcRzH/XEgx/5OEcf/QyLr/0Me6/9DH
+        uv/Qx7r/yL+x/3BeSv9cSDL/XUkz/6ici//Qx7r/0Me6/9DHuv/Qx7r/0Me6/8/Guv+vo5T/Xko0/1xI
+        Mv9sWkX/xryu/9DHuv/Qx7r/0Me6/9DHuv/Px7r/0Mi7/5KDcf9cSDL/XUky/4BwXf/Oxrj/0Me6/9DH
+        uv/Px7r/zsS3/31sWP9dSDP/W0Yw/WRQPWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJGRbQdhTTmyXUgy/1xI
+        Mf+fkoH/0Mi6/9DHuv/Qx7r/0Me6/8W7rf9sWUX/XUgy/15KNP+uopL/0Me6/9DHuv/Qx7r/0Me6/8/H
+        uv/Pxrn/rqKT/15KNP9dSDL/a1lD/8W7rf/Qx7r/0Me6/9DHuv/Px7r/z8e6/9DIu/+Zi3r/XEgy/11J
+        Mv96aVX/zcS2/9DHuv/Qx7n/0Me6/8/Guf+Hd2T/XEgy/1xHMv9jUDuFAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABzXEULWEIsu11IMv9dSTP/q56N/9DHuv/Qx7r/0Me6/9DHuv/Hva//cF1J/1xIMv9iTzn/t6yd/9DH
+        uv/Px7r/z8e6/9DHuv/Qx7r/z8a5/7arnP9jTzr/XEgx/3NhTf/Jv7H/0Me6/9DHuv/Qx7r/0Me6/8/H
+        uv/Qx7r/p5uK/15KM/9cSDL/fm1Z/83Etv/Qx7r/0Me6/9DHuv/Qx7r/koNx/1xIMv9dSDL/XEczlf//
+        /wIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAdGpfGF5KNdVdSDL/YEw2/7OomP/Qx7r/0Me6/9DHuv/Qx7r/z8e5/6+j
+        k/+Kemj/oZSC/8zDtv/Qx7r/z8e5/8/Huv/Qx7r/0Me6/9DHuv/NxLf/ppmI/41+a/+0qZn/0Me6/9DH
+        uv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/8i/sf+ai3r/jX1q/7isnf/Qx7n/0Me6/9DHuv/Qx7n/z8e5/56R
+        f/9cSDL/XEgy/19LN7KRbW0HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGlaSyJaRjHeXUgy/2RRO/+8sKH/0Me6/9DH
+        uv/Qx7n/0Me6/9DHuv/Qx7r/0Me5/9DHuv/Qx7r/0Me6/8/Huv/Qx7r/0Me6/8/Huv/Pxrn/0Me6/9DH
+        uv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/8/Huv/Qx7r/0Me6/8/Huf/Px7n/0Me6/9DHuv/Qx7r/z8e5/9DH
+        uv/Px7n/0Me5/8/Huf+qno3/XUo0/11JM/9YRTC+ampVDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuW0g1Xkk07l1I
+        Mv9qV0L/wrip/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/0Me5/9DHuv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/9DH
+        uv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/8/Huv/Qx7r/0Me6/8/Huv/Qx7r/0Me6/9DHuv/Px7n/0Me6/9DH
+        uv/Qx7r/0Me6/9DHuv/Qx7r/0Me6/9DHuf/Px7n/s6iY/2BMNv9dSTP/XEk01WpVShgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAX0s3QFpFMPNdSDL/b11I/8O4p//Jv67/yb+u/8m/rv/Jv67/yb+u/8m/rv/Jv67/yb+v/8m/
+        r//Jv6//yr+v/8q/r//Jv6//yb+v/8m/r//Jv6//yb+v/8m/r//Kv6//yb+v/8m/r//Jv6//yb+v/8q/
+        r//Jv6//yb+u/8m/r//Jv6//yb+v/8m/r//Jv67/yb+v/8m/r//Kv6//ysCw/7ism/9kUDv/XUkz/1tH
+        MuFuYFIlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGdUQFtcRzH8XUgy/3RiTf+9sJv/wLOe/7+znv+/s57/v7Oe/7+y
+        nf+/sp3/v7Od/7+ynv+/sp3/v7Ke/7+ynf+/sp7/wLOe/8Cznv+/s57/v7Oe/7+znv+/sp7/v7Kd/7+y
+        nf+/sp3/v7Oe/7+znv+/s57/v7Oe/7+znv+/s53/v7Od/7+ynf+/sp7/v7Oe/7+znv/As57/wLOe/8C0
+        n/+1qJP/aFU//11IM/9cSDPvZlhENAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf2pVDGlWSDVVQCqDWUUw/VxIMv92ZE//rqCL/66h
+        jP+uoYz/rqGM/66hjP+uoIz/rqCL/66gi/+uoIv/rqCL/66gi/+uoIv/rqGM/66hjP+voYz/rqGM/6+h
+        jP+uoYz/rqCM/66gi/+uoYz/rqGM/66hjP+uoYz/rqGM/66hjP+uoYz/rqCL/66hjP+uoIz/rqGM/66h
+        jP+voYz/r6GM/66hjP+uoYz/qZuG/2pXQv9cSTP/WUQu81A8JWVmU0Q0ZkxMCgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhWQ6NbRzLsWkYw91xI
+        Mv9cSDL/Xko1/2NQOf9jTzn/Y085/2NPOf9iTzn/Yk85/2JPOf9iTzn/Yk85/2NPOf9jTzn/Y085/2NP
+        Of9jTzn/Y085/2JPOv9iTzr/Yk85/2NPOf9jTzr/Y085/2JPOf9iTzn/Y085/2NPOf9jTzn/Y085/2NP
+        Of9jTzn/Yk85/2JPOf9jTzn/Y085/2JPOf9iTzn/Yk85/2JPOf9dSTT/XEgz/1xHMf5aRS/2WkYx7FpF
+        MY8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABaRC78XEgy/1xIMv9cSDP/XUgy/1xIMv9dSDP/XUgz/11IMv9dSDL/XEgy/11IMv9cSDL/XUgy/11I
+        M/9dSDP/XUky/11IM/9dSDL/XUgy/11IM/9dSDP/XUkz/11JMv9dSDL/XUgz/11IMv9dSDL/XEgy/1xI
+        Mv9dSDL/XEgy/11IMv9dSDL/XEgy/1xIMv9cSDP/XUgy/11IMv9dSDL/XUgy/1xIMv9dSTL/XUgz/1xI
+        Mv9cSDL/XEky/1xIMv9XQiz8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAVkEr/1xIMv9dSTP/YUw2/2NON/9jTjf/Y043/2JON/9jTjf/Y043/2NO
+        N/9jTjf/Y043/2NON/9jTjj/Y043/2JON/9jTjf/Y043/2NON/9jTjf/Y044/2NOOP9jTjf/Y043/2NO
+        N/9iTjf/Y043/2NON/9iTjf/Y043/2NON/9jTjf/Y043/2NON/9iTjf/Y043/2NON/9jTjf/Y043/2NO
+        N/9jTjf/Y043/2NON/9jTjf/YUw2/11JM/9cSTL/Uj4o/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFZBK/9cSDP/YEs1/4RvUv+OeFv/jnlb/454
+        W/+OeFv/jnhb/455W/+OeFv/jnhb/454W/+OeVv/jnlb/455W/+OeFv/jnlb/455W/+OeVv/jnlb/455
+        W/+OeVv/jnlb/455W/+OeFv/jnhb/454W/+OeVv/jnlb/454W/+OeVv/jnlb/455W/+OeVv/jXhb/454
+        W/+OeFv/jnhb/455W/+OeVv/jnlb/455W/+OeVv/jnhb/4VvU/9gSzX/XUkz/1I9KP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWQSr/XUgz/2FM
+        Nv+KdVj/lH5g/5R+YP+Tfl//lH5g/5R+YP+Uf2D/lH9g/5R/YP+UfmD/lH5g/5R+YP+Uf2D/lH9g/5R/
+        YP+Uf2D/lH9g/5R/YP+Uf2D/lH9g/5R+YP+Uf2D/lH9g/5R/YP+UfmD/lH9g/5R/YP+Uf2D/lH5g/5R+
+        YP+UfmD/lH9g/5R+YP+UfmD/lH5g/5R+YP+Uf2D/lH9g/5R/YP+Uf2D/lH9g/5R/YP+KdVj/YUw2/11J
+        Mv9SPSj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAVkEr/11JM/9hTTb/inVY/5R+YP+UfmD/lH5f/5R/YP+Uf2D/lH5g/5R+YP+Uf2D/lH5g/5R+
+        YP+UfmD/lH5g/5R+YP+UfmD/lH9g/5R/YP+UfmD/lH9g/5R/YP+UfmD/lH9g/5R+YP+UfmD/lH5g/5R+
+        YP+Uf2D/lH5g/5R+YP+Uf2D/lH9g/5R/YP+UfmD/lH5g/5R+YP+UfmD/lH5g/5R+YP+Uf2D/lH5g/5R+
+        YP+Ufl//inVY/2FMNv9dSTL/Uj0o/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFZBKv9dSTP/YU02/4p1WP+UfmD/lH5g/5R+YP+Uf2D/lH5f/5R+
+        YP+UfmD/lH5g/5R/YP+UfmD/lH5g/5R+YP+UfmD/lH5g/5R+YP+Uf2D/lH9g/5R/YP+Uf2D/lH9g/5R/
+        YP+Uf2D/lH5f/5R/YP+UfmD/lH5g/5R+X/+UfmD/lH9g/5R+YP+UfmD/lH9g/5R+YP+Uf2D/lH9g/5R+
+        X/+UfmD/lH9g/5R+YP+Uf2D/lH5f/4p1WP9hTDb/XUkz/1M+KP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYQyz/XUgz/2BLNf+GcFT/lH5g/5R/
+        YP+Uf2D/lH9g/5R/YP+Uf2D/lH5g/5R+YP+Uf2D/lH9g/5R+YP+UfmD/lH9g/5R/YP+Uf2D/lH9g/5R/
+        YP+Uf2D/lH9g/5R+YP+Uf2D/lH9f/5V/YP+Vf2D/lH9g/5R/YP+Uf2D/lH5g/5R/YP+Uf2D/lH9g/5R/
+        YP+Uf2D/lH9g/5R/YP+Uf2D/lH5g/5R/YP+Vf2D/lH9g/5N+X/+HclX/YEs1/11JM/9VPyr/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX0s46F1I
+        Mv9dSDL/ZVE5/3FcQ/9yXUT/cl1E/3JdRP9yXUT/cl1E/3JdRP9yXUX/c15F/3NeRP9yXUT/c11E/3Jd
+        RP9yXUT/cl5E/3NeRP9zXkT/c15E/3NeRP9zXkT/c15E/3JdRP9zXUT/c11E/3JdRP9zXkT/cl1E/3Jd
+        RP9yXUT/c15E/3NeRP9yXUT/c15E/3NeRP9zXUT/c11E/3JdRP9zXUT/c11E/3JdRP9xXEP/ZlI6/11J
+        M/9dSDL/Xko14wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAGBLOHpaRS/4XEgy/11IMv9cSDP/XUgy/1xIMv9dSDL/XEgz/11IM/9dSDL/XEgz/11I
+        Mv9cSDL/XUgy/1xIMv9cSDP/XEgy/1xIMv9dSDL/XEgy/11IMv9cSDL/XEgy/11IMv9dSDL/XEgy/11I
+        Mv9cSDL/XEgy/1xIMv9cSDL/XEgy/1xIMv9cSDL/XEgy/1xIMv9cSDL/XEgy/1xIM/9cSDL/XUgy/1xI
+        Mv9cSDL/XUgy/11IMv9dSDP/XEYy+GRQPnIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABfPy8QV0IvkVtGMvJbRjD+W0gx/1xIMf9cSDH/XEgy/1xI
+        Mv9cSDL/XEgx/1xHMf9cSDL/XEgy/1xJM/9dSDP/XUgy/1xHMf9cRzH/XEcx/1xHMf9cRzH/W0cx/1tH
+        Mf9cRzH/XEgx/1tHMf9cRzH/XEcx/1xHMf9bRzL/W0cy/1xIMv9cSDL/XEgy/1xHMf9cSDH/XEgx/1xI
+        Mf9cSDL/XEgx/1xHMf9cRzH/XEcx/1xHMf9cRzH+W0Yw7GVRQYx/b18QAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHV1Yg1jUT9IaVVDjGlX
+        RaZpV0WmaVdFpmlXRaZpV0WmaVdFpmhXRaZoV0amaVlGpmlXQ8RcSDL+XUgy/1xHMfFnVUOvaVdFpmlX
+        RqZpV0WmaVdFpmlWRaZoVkWmaFZFpmlXRqZpV0WmaVdFpmlXRqZpV0amaVlIpmVSP7lbRzD6XEgy/1pH
+        Me9qVkWtbVpIpmtZSKZpWUamaVdGpmlXRaZpV0WmaVdFpmlXRaZvXkula1dEg2lURD9xcVQJAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAH9/fwKqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgNvXkpZXEkz+1xI
+        M/9XQyzYW0gtHKqqqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qq
+        qgNTPSc6WEQt8FxIMv9WQi7XW0g/HP+qqgOqqqoDqqqqA6qqqgOqqqoDqqqqA6qqqgOqqqoD//+qA///
+        /wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAbFxJUFxHM/hdSTL/WEMu3FJBMR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAWkc0RFlGMPRcSDL/WEQw2GdLQhsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGJLOSxZRTDmXUgy/1tHMPdjTzuAcGFSIks8LRFPPy8QTz8vEE8/
+        LxBfPy8QTz8vEF8/LxBPPy8QTz8vEE8/LxBdUDUTZ1FBL1hCLqRbRzL+XUgy/1lEMcRvT08QAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzc1wLX0s5qVxHMv5cSDL/XEcy+VxH
+        Md1WQSvLVkIty1ZCK8tWQivLV0Ity1dCLctXQi3LV0Ity1ZCLctWQi3LV0ItzltHMudbRjD8XEgy/1pF
+        MPlVQy5u////AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHVl
+        VjJfSzfOWkYw/VxHMv9cSDL/XUgy/11IMv9dSDL/XUgy/11IM/9dSDL/XEgy/1xIMv9cSDH/XUgx/11I
+        Mf9dSDL/XEgy/1lFL/dSPCiYVEY4EgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD///8BaFRHJ15LOJFgSzjrVkEq/1Q/J/9UPyj/VEAo/1Q/KP9UPyj/VT8o/1Q/
+        J/9TPyf/VD8n/1Q/J/9UPyf/WkQv/2BNONdfSjduTz8vEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//wAAAAAf///wAAAAAAH//+AAAAAAAP//4AAAAAAA///gAAAAAAD///gAAAAAA////gAAAAA
+        f///+AAAAAA////4AAAAAD////AAAAAAH///8AAAAAAf///wAAAAAB////AAAAAAH///8AAAAAAf///w
+        AAAAAB////AAAAAAH///8AAAAAAf///gAAAAAB///+AAAAAAH///4AAAAAAP///gAAAAAA///+AAAAAA
+        D///4AAAAAAP///gAAAAAA///+AAAAAAD///4AAAAAAP///gAAAAAA///8AAAAAAD///wAAAAAAP///A
+        AAAAAAf//8AAAAAAB///wAAAAAAH///AAAAAAAf//8AAAAAAB///wAAAAAAH///AAAAAAAf//8AAAAAA
+        B///gAAAAAAH//+AAAAAAAf//4AAAAAAA///gAAAAAAD//+AAAAAAAP//4AAAAAAA///gAAAAAAD//+A
+        AAAAAAP//gAAAAAAAP/+AAAAAAAA//4AAAAAAAD//gAAAAAAAP/+AAAAAAAA//4AAAAAAAD//gAAAAAA
+        AP/+AAAAAAAA//4AAAAAAAD//gAAAAAAAP/+AAAAAAAA//4AAAAAAAD//wAAAAAAAf//wAAAAAAH////
+        8H/8H//////wAAAf//////AAAB//////+AAAP//////4AAB///8=
+</value>
   </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
+  <data name="chkHideOnRun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 24</value>
   </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;notifyIcon.Name" xml:space="preserve">
-    <value>notifyIcon</value>
+  <data name="&gt;&gt;chkNoSound.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="chkNoConfirm.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;menuEmptyRecycleBin.Name" xml:space="preserve">
-    <value>menuEmptyRecycleBin</value>
+  <data name="chkNoProgress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkNoSound.Text" xml:space="preserve">
+    <value>No Sound</value>
+  </data>
+  <data name="chkHideOnRun.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;logContextMenu.Name" xml:space="preserve">
+    <value>logContextMenu</value>
   </data>
   <data name="&gt;&gt;menuEmptyRecycleBin.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;opneRecycleBinToolStripMenuItem.Name" xml:space="preserve">
-    <value>opneRecycleBinToolStripMenuItem</value>
+  <data name="&gt;&gt;btnEmpty.Name" xml:space="preserve">
+    <value>btnEmpty</value>
   </data>
-  <data name="&gt;&gt;opneRecycleBinToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;menuExit.Name" xml:space="preserve">
-    <value>menuExit</value>
+  <data name="&gt;&gt;chkNoConfirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lstLog.ItemHeight" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;trayMenu.Name" xml:space="preserve">
+    <value>trayMenu</value>
+  </data>
+  <data name="btnOpen.Text" xml:space="preserve">
+    <value>Open</value>
   </data>
   <data name="&gt;&gt;menuExit.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;chkshowNotifications.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
+  <data name="chkshowNotifications.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lstLog.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 9pt</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnDrives.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btnOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 38</value>
+  </data>
+  <data name="&gt;&gt;clearLogToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkNoConfirm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkNoProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 110</value>
+  </data>
+  <data name="chkNoProgress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;clearLogToolStripMenuItem.Name" xml:space="preserve">
+    <value>clearLogToolStripMenuItem</value>
+  </data>
+  <data name="lstLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 136</value>
+  </data>
+  <data name="chkAutoClean.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkNoSound.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkNoSound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 24</value>
+  </data>
+  <data name="&gt;&gt;chkNoSound.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="chkshowNotifications.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 24</value>
+  </data>
+  <data name="numMaxSizeGb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 42</value>
+  </data>
+  <data name="menuEmptyRecycleBin.Text" xml:space="preserve">
+    <value>Clear Recycle Bin</value>
+  </data>
+  <data name="clearLogToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clear Log</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Gb</value>
+  </data>
+  <data name="chkNoConfirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 24</value>
+  </data>
+  <data name="&gt;&gt;chkshowNotifications.Name" xml:space="preserve">
+    <value>chkshowNotifications</value>
+  </data>
+  <data name="chkHideOnRun.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;numMaxSizeGb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEmpty.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkAutoClean.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chkAutoClean.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;opneRecycleBinToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkNoConfirm.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstLog.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="chkHideOnRun.Text" xml:space="preserve">
+    <value>Run minimized</value>
+  </data>
+  <data name="&gt;&gt;lstLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="notifyIcon.Text" xml:space="preserve">
+    <value>NanoBin — монитор корзины</value>
+  </data>
+  <data name="btnDrives.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkshowNotifications.Text" xml:space="preserve">
+    <value>Show notifications</value>
+  </data>
+  <data name="btnDrives.Text" xml:space="preserve">
+    <value>By Disks</value>
+  </data>
+  <data name="numMaxSizeGb.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chkHideOnRun.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnEmpty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkNoSound.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chkNoConfirm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAutoClean.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 24</value>
+  </data>
+  <data name="&gt;&gt;chkHideOnRun.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="trayMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>275, 17</value>
+  </metadata>
+  <metadata name="logContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>415, 17</value>
+  </metadata>
+  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>130, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

@@ -653,11 +653,20 @@
         AA/4AAAP+AAAD/gAAA/wAAAP8AAAB/AAAAfwAAAH8AAAB/AAAAfwAAAH8AAAB/gAAA//wAH//8AD/w==
 </value>
   </data>
+  <data name="menuEmptyRecycleBin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 30</value>
+  </data>
   <data name="menuEmptyRecycleBin.Text" xml:space="preserve">
     <value>Очистить корзину</value>
   </data>
+  <data name="opneRecycleBinToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 30</value>
+  </data>
   <data name="opneRecycleBinToolStripMenuItem.Text" xml:space="preserve">
     <value>Открыть корзину</value>
+  </data>
+  <data name="menuExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 30</value>
   </data>
   <data name="menuExit.Text" xml:space="preserve">
     <value>Выход</value>
@@ -676,6 +685,12 @@
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Корзина</value>
+  </data>
+  <data name="clearLogToolStripMenuItem.Text" xml:space="preserve">
+    <value>Очистить журнал</value>
+  </data>
+  <data name="logContextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 34</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1166,10 +1181,6 @@
         AA/+AAA//AAAH/wAAB/8AAAf/AAAH/wAAB/8AAAf/AAAH/wAAB/4AAAf+AAAD/gAAA/4AAAP+AAAD/gA
         AA/4AAAP+AAAD/gAAA/wAAAP8AAAB/AAAAfwAAAH8AAAB/AAAAfwAAAH8AAAB/gAAA//wAH//8AD/w==
 </value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>NanoBin — Монитор Корзины</value>
