@@ -30,7 +30,7 @@ jobs:
           Write-Host $content
           Write-Host "----------------------------------------------------------------------"
           Write-Host "Getting matches..."
-            if ($content -cmatch 'AssemblyVersion\("([0-9\.]+)"\)') {
+            if ($content -cmatch '(AssemblyVersion)') {
                 Write-Host "$matches"
 
               }
