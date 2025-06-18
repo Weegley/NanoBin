@@ -1,6 +1,8 @@
 name: Build & Release NanoBin
+
 permissions:
   contents: write
+
 on:
   push:
     branches: [ main ]
@@ -23,15 +25,14 @@ jobs:
       - name: 🧾 Checkout repository
         uses: actions/checkout@v4
 
-
       - name: 🔍 Extract version from AssemblyInfo.cs
         id: get_version
         shell: pwsh
         run: |
           $line = Select-String -Path ./Properties/AssemblyInfo.cs -Pattern 'AssemblyVersion\("([0-9\.]+)"\)'
           if ($line.Matches.Count -eq 0) {
-          Write-Error "AssemblyVersion not found!"
-          exit 1
+              Write-Error "AssemblyVersion not found!"
+              exit 1
           }
           $version = $line.Matches[0].Groups[1].Value
           echo "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
@@ -73,35 +74,42 @@ jobs:
       - name: Get version from build job
         run: echo "Version is ${{ needs.build.outputs.version }}"
 
-      - name: Create tag if not exists
-        id: create_tag
+      - name: Check for existing tag
+        id: check_tag
         run: |
           TAG="v${{ needs.build.outputs.version }}"
           if git rev-parse "$TAG" >/dev/null 2>&1; then
-            echo "Tag $TAG already exists. Skipping tag creation."
-            exit 0
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
           fi
+
+      - name: Create tag if not exists
+        if: steps.check_tag.outputs.exists == 'false'
+        run: |
+          TAG="v${{ needs.build.outputs.version }}"
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git tag "$TAG"
           git push origin "$TAG"
 
-      - name: Generate changelog (simple)
+      - name: Read changelog for this version
         id: changelog
         run: |
-          PREV_TAG=$(git tag --sort=-v:refname | head -n 2 | tail -n 1)
-          if [ -z "$PREV_TAG" ]; then
-            git log --oneline > CHANGELOG.txt
-          else
-            git log "$PREV_TAG"..HEAD --oneline > CHANGELOG.txt
-          fi
+          VERSION="v${{ needs.build.outputs.version }}"
+          # Ищем секцию для текущей версии, до следующей секции или конца файла
+          # Меняем при необходимости на свой стиль!
+          TEXT=$(awk "/^## \\[?$VERSION\\]?/ {flag=1;next} /^## /{flag=0} flag" CHANGELOG.md | sed '/^[[:space:]]*$/d')
+          echo "body<<EOF" >> $GITHUB_OUTPUT
+          echo "$TEXT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ needs.build.outputs.version }}
           name: NanoBin v${{ needs.build.outputs.version }}
-          body_path: CHANGELOG.txt
+          body: ${{ steps.changelog.outputs.body }}
           files: NanoBin.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
