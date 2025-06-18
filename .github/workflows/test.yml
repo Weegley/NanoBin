@@ -24,7 +24,7 @@ jobs:
         
       - name: 🔍 Extract version from AssemblyInfo.cs
         id: get_version
-        shell: pwsh
+        shell: powershell
         run: |
           $content = Get-Content ./Properties/AssemblyInfo.cs
           Write-Host $content
