@@ -105,6 +105,5 @@ jobs:
           name: NanoBin v${{ needs.build.outputs.version }}
           body: ${{ steps.changelog.outputs.body }}
           files: NanoBin.zip
-          update_existing: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
