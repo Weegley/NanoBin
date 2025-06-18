@@ -117,34 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="baloonAutoCleaned" xml:space="preserve">
+    <value>Автоочистка корзины ({0} MB)</value>
+  </data>
+  <data name="baloonManuallyCleaned" xml:space="preserve">
+    <value>Очистка корзины ({0} MB)</value>
+  </data>
   <data name="byDriveString" xml:space="preserve">
-    <value>{0} — {1} файлов, {2} Мб</value>
+    <value>{0} — {1} Файлов, {2} Мб</value>
   </data>
-  <data name="msgBinAutoCleaned" xml:space="preserve">
-    <value>Корзина очищена автоматически</value>
+  <data name="logBinAutoCleaned" xml:space="preserve">
+    <value>{0}: Автоочистка ({1} MB)</value>
   </data>
-  <data name="msgBinManuallyCleaned" xml:space="preserve">
-    <value>Корзина очищена вручную</value>
-  </data>
-  <data name="msgCleaning" xml:space="preserve">
-    <value>{0}: Очистка {1} Мб</value>
+  <data name="logBinManuallyCleaned" xml:space="preserve">
+    <value>{0}: Очистка ({1} MB)</value>
   </data>
   <data name="msgCouldNotOpenBin" xml:space="preserve">
     <value>Невозможно открыть корзину:</value>
   </data>
   <data name="StatusLabel" xml:space="preserve">
-    <value>Файлов: {0}, Объём: {1} Мб</value>
+    <value>Файлов: {0}, Объём: {1} MB</value>
   </data>
   <data name="strAllbinsAreEmpty" xml:space="preserve">
     <value>Корзина на всех дисках пуста</value>
   </data>
   <data name="strAnotherInstanceRunning" xml:space="preserve">
-    <value>Другая копия программы уже работает!</value>
+    <value>Другая копия программы уже запущена!</value>
   </data>
   <data name="strERROR" xml:space="preserve">
     <value>Ошибка</value>
   </data>
   <data name="strNotifyIconText" xml:space="preserve">
-    <value>Файлов: {0}{1}Объём: {2} Мб</value>
+    <value>Файлов: {0}{1}Объём: {2} MB</value>
   </data>
 </root>

@@ -16,7 +16,7 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM.
 
 [assembly: Guid("0b27c345-d696-46aa-a7a8-b2394e29334c")]
-[assembly: AssemblyVersion("1.0.1")]       // Used by the CLR
+[assembly: AssemblyVersion("1.0.2")]       // Used by the CLR
 
 [assembly: AssemblyTitle("NanoBin")]
 [assembly: AssemblyDescription("Recycle Bin Monitor")]

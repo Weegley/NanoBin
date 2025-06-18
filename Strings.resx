@@ -117,17 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="baloonAutoCleaned" xml:space="preserve">
+    <value>Recycle bin Auto Cleaned ({0} MB)</value>
+  </data>
+  <data name="baloonManuallyCleaned" xml:space="preserve">
+    <value>Recycle bin Manually cleaned ({0} MB)</value>
+  </data>
   <data name="byDriveString" xml:space="preserve">
     <value>{0} — {1} Files, {2} MB</value>
   </data>
-  <data name="msgBinAutoCleaned" xml:space="preserve">
-    <value>Recycle bin Auto Cleaned</value>
+  <data name="logBinAutoCleaned" xml:space="preserve">
+    <value>{0}: Recycle bin Auto Cleaned ({1} MB)</value>
   </data>
-  <data name="msgBinManuallyCleaned" xml:space="preserve">
-    <value>Recycle bin manually cleaned</value>
-  </data>
-  <data name="msgCleaning" xml:space="preserve">
-    <value>{0}: Cleaning {1} MB</value>
+  <data name="logBinManuallyCleaned" xml:space="preserve">
+    <value>{0}: Recycle bin Manually cleaned ({1} MB)</value>
   </data>
   <data name="msgCouldNotOpenBin" xml:space="preserve">
     <value>Could Not open Recycle Bin:</value>

@@ -15,7 +15,7 @@ namespace NanoBin
 {
     public partial class MainForm : Form
     {
-        private ResourceManager resMan;
+        private readonly ResourceManager resMan;
 
         [StructLayout(LayoutKind.Sequential, Pack = 8)]
         public struct SHQUERYRBINFO
@@ -39,8 +39,8 @@ namespace NanoBin
             SHERB_NOSOUND = 0x00000004
         }
         public SHQUERYRBINFO info;
-        private Icon iconFull;
-        private Icon iconEmpty;
+        private readonly Icon iconFull;
+        private readonly Icon iconEmpty;
         public MainForm()
         {
             resMan = new ResourceManager("NanoBin.Strings", typeof(MainForm).Assembly);
@@ -61,9 +61,10 @@ namespace NanoBin
             
             EnsureAppConfigExists();
             LoadSettingsFromConfig();
-
-            timer1.Start();
+            
             UpdateStatus();
+            timer1.Start();
+            
         }
 
         private void LoadSettingsFromConfig()
@@ -89,29 +90,14 @@ namespace NanoBin
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            var info = GetRecycleBinInfo();
-            
-            lblStatus.Text = string.Format(resMan.GetString("StatusLabel"), info.ItemCount, info.SizeMB);
 
 
-            if (chkAutoClean.Checked)
-            {
-                double maxGb = (double)numMaxSizeGb.Value;
-                if (info.SizeMB / 1024.0 >= maxGb)
-                {
-                    AutoEmptyRecycleBin();
-                    LogAutoClean(info.SizeMB);
-                }
-            }
+            AutoEmptyRecycleBin();
+            UpdateStatus();
             UpdateTrayIcon();
         }
 
-        private void AutoEmptyRecycleBin()
-        {
-            RecycleFlags flags = GetFlagsFromCheckboxes();
-            SHEmptyRecycleBin(IntPtr.Zero, null, flags);
-            ShowBalloonTip(resMan.GetString("msgBinAutoCleaned"));
-        }
+
 
         private RecycleFlags GetFlagsFromCheckboxes()
         {
@@ -137,43 +123,19 @@ namespace NanoBin
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-            try
-            {
-                System.Diagnostics.Process.Start("explorer.exe", "shell:RecycleBinFolder");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(resMan.GetString("msgCouldNotOpenBin") +" "+ ex.Message);
-            }
+            
+            OpenRecycleBin();
         }
 
-        private void btnEmpty_Click(object sender, EventArgs e)
+        private void BtnEmpty_Click(object sender, EventArgs e)
         {
-                var info = GetRecycleBinInfo();
-           
-                var flags = GetFlagsFromCheckboxes();
-
-            try
-            {
-                uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
-                if (result == 0) { return; }
-            }
-            catch (Exception)
-            {
-                return;
-            }
 
 
-                
-                UpdateStatus();
-                string time = DateTime.Now.ToString("HH:mm:ss");
-                //lstLog.Items.Insert(0, $"{time} — очистка ({info.SizeMB:F2} МБ)");
-                lstLog.Items.Insert(0, string.Format(resMan.GetString("msgCleaning"),time, $"{info.SizeMB:F2}"));
-                ShowBalloonTip(resMan.GetString("msgBinManuallyCleaned"));
-
+                DoManualClean();
+ 
         }
 
-        private void btnDrives_Click(object sender, EventArgs e)
+        private void BtnDrives_Click(object sender, EventArgs e)
         {
             string[] drives = Environment.GetLogicalDrives();
             StringBuilder sb = new StringBuilder();
@@ -196,15 +158,10 @@ namespace NanoBin
         private void UpdateStatus()
         {
             var info = GetRecycleBinInfo();
-            //lblStatus.Text = $"Файлов: {info.ItemCount}, размер: {info.SizeMB} МБ";
             lblStatus.Text = string.Format(resMan.GetString("StatusLabel"), info.ItemCount, info.SizeMB);
         }
 
-        private void LogAutoClean(double sizeBefore)
-        {
-            string time = DateTime.Now.ToString("HH:mm:ss");
-            lstLog.Items.Insert(0, $"{time} — автоочистка ({sizeBefore:F2} МБ)");
-        }
+
         private void SaveSettingsToConfig()
         {
             EnsureAppConfigExists();
@@ -229,7 +186,7 @@ namespace NanoBin
            
         }
 
-        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void NotifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Show();
             this.WindowState = FormWindowState.Normal;
@@ -253,7 +210,7 @@ namespace NanoBin
         {
             var info = GetRecycleBinInfo();
 
-            //notifyIcon.Text = $"Файлов: {info.ItemCount}\nРазмер: {info.SizeMB:F1} МБ";
+
             notifyIcon.Text = string.Format(resMan.GetString("strNotifyIconText"), info.ItemCount, Environment.NewLine, info.SizeMB);
 
             try
@@ -267,7 +224,7 @@ namespace NanoBin
             }
         }
 
-        private void notifyIcon_MouseClick(object sender, MouseEventArgs e)
+        private void NotifyIcon_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left) {
                 this.Show();
@@ -277,30 +234,12 @@ namespace NanoBin
             }
         }
 
-        private void menuEmptyRecycleBin_Click(object sender, EventArgs e)
+        private void MenuEmptyRecycleBin_Click(object sender, EventArgs e)
         {
-            var info = GetRecycleBinInfo();
-
-            var flags = GetFlagsFromCheckboxes();
-
-            try
-            {
-                uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
-                if (result == 0) { return; }
-            }
-            catch (Exception)
-            {
-                return;
-            }
-
-            string time = DateTime.Now.ToString("HH:mm:ss");
-            lstLog.Items.Insert(0, string.Format(resMan.GetString("msgCleaning"), time, $"{info.SizeMB:F2}"));
-            UpdateStatus();
-            UpdateTrayIcon();
-            ShowBalloonTip(resMan.GetString("msgBinManuallyCleaned"));
+            DoManualClean();
         }
 
-        private void menuExit_Click(object sender, EventArgs e)
+        private void MenuExit_Click(object sender, EventArgs e)
         {
             notifyIcon.Visible = false;
             Application.Exit();
@@ -359,7 +298,81 @@ namespace NanoBin
             }
         }
 
-        private void opneRecycleBinToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpneRecycleBinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenRecycleBin();
+        }
+
+        private void ChkAutoClean_ClientSizeChanged(object sender, EventArgs e)
+        {
+            numMaxSizeGb.Left = chkAutoClean.Left + chkAutoClean.Width + 6;
+            label1.Left = numMaxSizeGb.Left + numMaxSizeGb.Width + 6;
+        }
+
+        private void DoManualClean()
+        {
+            var info = GetRecycleBinInfo();
+            if (info.ItemCount > 0)
+            {
+                try
+                {
+                    var flags = GetFlagsFromCheckboxes();
+                    uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+                    if (result != 0) { return; }
+                    else
+                    {
+                        LogManualClean(info);
+                    }
+                }
+                catch (Exception)
+                {
+                    return;
+                }
+            }
+        }
+        private void LogManualClean((int ItemCount, double SizeMB) info) 
+        {
+            string time = DateTime.Now.ToString("HH:mm:ss");
+            lstLog.Items.Insert(0, string.Format(resMan.GetString("logBinManuallyCleaned"), time, info.SizeMB.ToString("F2")));
+            ShowBalloonTip(string.Format(resMan.GetString("baloonManuallyCleaned"), info.SizeMB.ToString("F2")));
+        }
+
+        private void AutoEmptyRecycleBin()
+        {
+
+            if (chkAutoClean.Checked)
+            {
+
+                (int ItemCount, double SizeMB) info = GetRecycleBinInfo();
+
+                double maxGb = (double)numMaxSizeGb.Value;
+                if (info.SizeMB / 1024.0 >= maxGb)
+                {
+                    try
+                    {
+                        RecycleFlags flags = GetFlagsFromCheckboxes();
+                        uint result = SHEmptyRecycleBin(IntPtr.Zero, null, flags);
+                        if (result != 0) { return; }
+                        else
+                        {
+                            LogAutoClean(info.SizeMB);
+                        }
+                    }
+                    catch(Exception) { return; }
+
+                }
+            }
+
+        }
+        private void LogAutoClean(double sizeBefore)
+        {
+            string time = DateTime.Now.ToString("HH:mm:ss");
+            lstLog.Items.Insert(0, string.Format(resMan.GetString("logBinAutoCleaned"), time, sizeBefore.ToString("F2")));
+            var msg = string.Format(resMan.GetString("baloonAutoCleaned"), sizeBefore.ToString("F2"));
+            ShowBalloonTip(msg);
+        }
+
+        private void OpenRecycleBin()
         {
             try
             {
@@ -369,17 +382,6 @@ namespace NanoBin
             {
                 MessageBox.Show(resMan.GetString("msgCouldNotOpenBin") + " " + ex.Message);
             }
-        }
-
-        private void chkAutoClean_ClientSizeChanged(object sender, EventArgs e)
-        {
-            numMaxSizeGb.Left = chkAutoClean.Left + chkAutoClean.Width + 6;
-            label1.Left = numMaxSizeGb.Left + numMaxSizeGb.Width + 6;
-        }
-
-        private void chkNoConfirm_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

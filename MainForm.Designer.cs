@@ -59,13 +59,13 @@ namespace NanoBin
             // 
             resources.ApplyResources(this.chkAutoClean, "chkAutoClean");
             this.chkAutoClean.Name = "chkAutoClean";
-            this.chkAutoClean.ClientSizeChanged += new System.EventHandler(this.chkAutoClean_ClientSizeChanged);
+            this.chkAutoClean.ClientSizeChanged += new System.EventHandler(this.ChkAutoClean_ClientSizeChanged);
             // 
             // chkNoConfirm
             // 
             resources.ApplyResources(this.chkNoConfirm, "chkNoConfirm");
             this.chkNoConfirm.Name = "chkNoConfirm";
-            this.chkNoConfirm.CheckedChanged += new System.EventHandler(this.chkNoConfirm_CheckedChanged);
+            
             // 
             // chkNoProgress
             // 
@@ -103,13 +103,17 @@ namespace NanoBin
             // 
             resources.ApplyResources(this.btnEmpty, "btnEmpty");
             this.btnEmpty.Name = "btnEmpty";
-            this.btnEmpty.Click += new System.EventHandler(this.btnEmpty_Click);
+            this.btnEmpty.Click += new System.EventHandler(this.BtnEmpty_Click);
             // 
             // btnDrives
             // 
             resources.ApplyResources(this.btnDrives, "btnDrives");
             this.btnDrives.Name = "btnDrives";
-            this.btnDrives.Click += new System.EventHandler(this.btnDrives_Click);
+            this.btnDrives.Click += new System.EventHandler(this.BtnDrives_Click);
+            // 
+            // timer1
+            // 
+
             // 
             // lstLog
             // 
@@ -125,8 +129,8 @@ namespace NanoBin
             // 
             this.notifyIcon.ContextMenuStrip = this.trayMenu;
             resources.ApplyResources(this.notifyIcon, "notifyIcon");
-            this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseClick);
-            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
+            this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon_MouseClick);
+            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon_MouseDoubleClick);
             // 
             // trayMenu
             // 
@@ -142,19 +146,19 @@ namespace NanoBin
             // 
             this.menuEmptyRecycleBin.Name = "menuEmptyRecycleBin";
             resources.ApplyResources(this.menuEmptyRecycleBin, "menuEmptyRecycleBin");
-            this.menuEmptyRecycleBin.Click += new System.EventHandler(this.menuEmptyRecycleBin_Click);
+            this.menuEmptyRecycleBin.Click += new System.EventHandler(this.MenuEmptyRecycleBin_Click);
             // 
             // opneRecycleBinToolStripMenuItem
             // 
             this.opneRecycleBinToolStripMenuItem.Name = "opneRecycleBinToolStripMenuItem";
             resources.ApplyResources(this.opneRecycleBinToolStripMenuItem, "opneRecycleBinToolStripMenuItem");
-            this.opneRecycleBinToolStripMenuItem.Click += new System.EventHandler(this.opneRecycleBinToolStripMenuItem_Click);
+            this.opneRecycleBinToolStripMenuItem.Click += new System.EventHandler(this.OpneRecycleBinToolStripMenuItem_Click);
             // 
             // menuExit
             // 
             this.menuExit.Name = "menuExit";
             resources.ApplyResources(this.menuExit, "menuExit");
-            this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
+            this.menuExit.Click += new System.EventHandler(this.MenuExit_Click);
             // 
             // chkHideOnRun
             // 

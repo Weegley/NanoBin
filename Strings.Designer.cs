@@ -61,6 +61,24 @@ namespace NanoBin {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Recycle bin Auto Cleaned ({0} MB).
+        /// </summary>
+        internal static string baloonAutoCleaned {
+            get {
+                return ResourceManager.GetString("baloonAutoCleaned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recycle bin Manually cleaned ({0} MB).
+        /// </summary>
+        internal static string baloonManuallyCleaned {
+            get {
+                return ResourceManager.GetString("baloonManuallyCleaned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} — {1} Files, {2} MB.
         /// </summary>
         internal static string byDriveString {
@@ -70,29 +88,20 @@ namespace NanoBin {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Recycle bin Auto Cleaned.
+        ///   Looks up a localized string similar to {0}: Recycle bin Auto Cleaned ({1} MB).
         /// </summary>
-        internal static string msgBinAutoCleaned {
+        internal static string logBinAutoCleaned {
             get {
-                return ResourceManager.GetString("msgBinAutoCleaned", resourceCulture);
+                return ResourceManager.GetString("logBinAutoCleaned", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Recycle bin manually cleaned.
+        ///   Looks up a localized string similar to {0}: Recycle bin Manually cleaned ({1} MB).
         /// </summary>
-        internal static string msgBinManuallyCleaned {
+        internal static string logBinManuallyCleaned {
             get {
-                return ResourceManager.GetString("msgBinManuallyCleaned", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {0}: Cleaning {1} MB.
-        /// </summary>
-        internal static string msgCleaning {
-            get {
-                return ResourceManager.GetString("msgCleaning", resourceCulture);
+                return ResourceManager.GetString("logBinManuallyCleaned", resourceCulture);
             }
         }
         
