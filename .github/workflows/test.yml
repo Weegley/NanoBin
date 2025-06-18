@@ -30,9 +30,9 @@ jobs:
           Write-Host $content
           Write-Host "----------------------------------------------------------------------"
           Write-Host "Getting matches..."
-            if ($content -cmatch '(AssemblyVersion)') {
-                Write-Host "Matches found: $matches.Count"
-                Write-Host $matches
+            if ($content -match '(AssemblyVersion)') {
+                Write-Host "Matches found: $Matches.Count"
+                Write-Host $Matches
 
               }
               else
