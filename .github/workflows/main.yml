@@ -75,24 +75,17 @@ jobs:
       - name: Get version from build job
         run: echo "Version is ${{ needs.build.outputs.version }}"
 
-      - name: Check for existing tag
-        id: check_tag
+      - name: Create tag if not exists (robust)
         run: |
           TAG="v${{ needs.build.outputs.version }}"
-          if git rev-parse "$TAG" >/dev/null 2>&1; then
-            echo "exists=true" >> $GITHUB_OUTPUT
+          if git ls-remote --tags origin | grep "refs/tags/$TAG$"; then
+            echo "Tag already exists: $TAG"
           else
-            echo "exists=false" >> $GITHUB_OUTPUT
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git tag "$TAG"
+            git push origin "$TAG"
           fi
-
-      - name: Create tag if not exists
-        if: steps.check_tag.outputs.exists == 'false'
-        run: |
-          TAG="v${{ needs.build.outputs.version }}"
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git tag "$TAG"
-          git push origin "$TAG"
 
       - name: Read changelog for this version
         id: changelog
