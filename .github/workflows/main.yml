@@ -22,24 +22,18 @@ jobs:
       - name: 🧾 Checkout repository
         uses: actions/checkout@v4
 
+
       - name: 🔍 Extract version from AssemblyInfo.cs
         id: get_version
         shell: pwsh
         run: |
-          $content = Get-Content ./Properties/AssemblyInfo.cs
-            if ($content -match 'AssemblyVersion\("([0-9\.]+)"\)') {
-                Write-Host "Полное совпадение: $($matches[0])"
-                Write-Host "Только версия: $($matches[1])"
-              }
-            if ($content -match 'AssemblyVersion\("([0-9\.]+)"\)') {
-                Write-Host "Полное совпадение: $($matches[0])"
-                Write-Host "Только версия: $($matches[1])"
-            $version = $matches[1]
-            echo "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
-          } else {
-            Write-Error "AssemblyVersion not found!"
-            exit 1
+          $line = Select-String -Path ./Properties/AssemblyInfo.cs -Pattern 'AssemblyVersion\("([0-9\.]+)"\)'
+          if ($line.Matches.Count -eq 0) {
+          Write-Error "AssemblyVersion not found!"
+          exit 1
           }
+          $version = $line.Matches[0].Groups[1].Value
+          echo "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
 
       - name: 🛠 Set up MSBuild
         uses: microsoft/setup-msbuild@v1.3.1
