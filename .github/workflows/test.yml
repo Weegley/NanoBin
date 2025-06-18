@@ -26,19 +26,11 @@ jobs:
         id: get_version
         shell: powershell
         run: |
-          $content = Get-Content ./Properties/AssemblyInfo.cs
-          Write-Host $content
-          Write-Host "----------------------------------------------------------------------"
-          Write-Host "Getting matches..."
-            if ($content -match '(AssemblyVersion)') {
-                Write-Host "Matches found: $Matches.Count"
-                Write-Host $Matches
-
-              }
-              else
-              {
-            Write-Host "No matches"
-              
-              }
+          $line = Select-String -Path ./Properties/AssemblyInfo.cs -Pattern 'AssemblyVersion\("([0-9\.]+)"\)'
+          if ($line.Matches.Count -eq 0) {
+          Write-Error "AssemblyVersion not found!"
+          }
+          $version = $line.Matches[0].Groups[1].Value
+          Write-Host "Version: $version"
               
 
