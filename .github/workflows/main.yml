@@ -2,8 +2,7 @@ name: Build & Release NanoBin
 
 permissions:
   contents: write
-
-on:
+on: workflow_dispatch:
   push:
     branches: [ main ]
     paths-ignore:
