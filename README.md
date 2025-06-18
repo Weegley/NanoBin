@@ -1,4 +1,4 @@
-![workflow](https://github.com/Weegley/NanoBin/actions/workflows/main.yml/badge.svg)
+[![Build & Release NanoBin](https://github.com/Weegley/NanoBin/actions/workflows/main.yml/badge.svg)](https://github.com/Weegley/NanoBin/actions/workflows/main.yml)
 
 # 🗑️ NanoBin — Recycle Bin Monitor for Windows
 
