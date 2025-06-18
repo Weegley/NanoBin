@@ -28,8 +28,14 @@ jobs:
         run: |
           $content = Get-Content ./Properties/AssemblyInfo.cs
           Write-Host $content
-            if ($content -match 'AssemblyVersion\("([0-9\.]+)"\)') {
+            if ($content -cmatch 'AssemblyVersion\("([0-9\.]+)"\)') {
                 Write-Host $matches
 
               }
+              else
+              {
+            Write-Host "No matches"
+              
+              }
+              
 
