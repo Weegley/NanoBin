@@ -31,7 +31,8 @@ jobs:
           Write-Host "----------------------------------------------------------------------"
           Write-Host "Getting matches..."
             if ($content -cmatch '(AssemblyVersion)') {
-                Write-Host "$matches"
+                Write-Host "Matches found: $matches.count"
+                Write-Host $matches
 
               }
               else
