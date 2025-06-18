@@ -51,7 +51,7 @@ jobs:
           $target = Get-ChildItem -Path .\bin\Release\ -Directory | Where-Object { $_.Name -like 'net*' } | Select-Object -First 1
           mkdir output\NanoBin
           Copy-Item -Path "$($target.FullName)\*" -Destination output\NanoBin -Recurse -Force
-          Compress-Archive -Path output\NanoBin\* -DestinationPath NanoBin.zip
+          Compress-Archive -Path output\NanoBin -DestinationPath NanoBin.zip
 
       - name: ⬆️ Upload artifact to Actions
         uses: actions/upload-artifact@v4
