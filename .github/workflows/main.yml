@@ -51,13 +51,13 @@ jobs:
           $target = Get-ChildItem -Path .\bin\Release\ -Directory | Where-Object { $_.Name -like 'net*' } | Select-Object -First 1
           mkdir output\NanoBin
           Copy-Item -Path "$($target.FullName)\*" -Destination output\NanoBin -Recurse -Force
-          Compress-Archive -Path output\NanoBin -DestinationPath NanoBin.zip
+          Compress-Archive -Path output\NanoBin -DestinationPath NanoBin-Windows.zip
 
       - name: ⬆️ Upload artifact to Actions
         uses: actions/upload-artifact@v4
         with:
           name: NanoBin-Windows
-          path: NanoBin.zip
+          path: NanoBin-Windows.zip
 
   release:
     needs: build
@@ -104,6 +104,6 @@ jobs:
           tag_name: v${{ needs.build.outputs.version }}
           name: NanoBin v${{ needs.build.outputs.version }}
           body: ${{ steps.changelog.outputs.body }}
-          files: NanoBin.zip
+          files: NanoBin-Windows.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
